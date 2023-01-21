@@ -1,0 +1,40 @@
+runtime: php72
+
+handlers:
+# ルートにアクセスされた時、index.html を表示
+- url: /
+  static_files: www/index.html
+  upload: www/index.html
+  # secure: always
+
+# 3 ページだけなので、限定的に設定する
+- url: /company
+  static_files: www/company.html
+  upload: www/company.html
+  # secure: always
+
+- url: /student
+  static_files: www/student.html
+  upload: www/student.html
+  # secure: always
+
+# - url: /(.*)
+#   static_files: www/\1
+#   upload: www/(.*)
+
+# # 下層フォルダ自体にアクセスされた時、各フォルダの index.html を表示
+# - url: /(.+)/$
+#   static_files: \1/index.html
+#   upload: .+/index\.html$
+#   secure: always
+
+# # 静的ファイル
+# - url: /(.+\.(html|css|js|gif|png|jpg))$
+#   static_files: \1
+#   upload: .+\.(html|css|js|gif|png|jpg)$
+#   secure: always
+
+# 上記以外は index.php
+- url: .*
+  script: auto
+  secure: always
