@@ -1,5 +1,11 @@
+#############################################
+###   使用する言語と version                 ###
+#############################################
 runtime: php81
 
+#############################################
+###   URI を設定する                        ###
+#############################################
 handlers:
 # ルートにアクセスされた時、index.html を表示
 - url: /
@@ -18,9 +24,9 @@ handlers:
   upload: www/student.html
   # secure: always
 
-# - url: /(.*)
-#   static_files: www/\1
-#   upload: www/(.*)
+- url: /(.*)
+  static_files: www/\1
+  upload: www/(.*)
 
 # # 下層フォルダ自体にアクセスされた時、各フォルダの index.html を表示
 # - url: /(.+)/$
@@ -32,9 +38,25 @@ handlers:
 # - url: /(.+\.(html|css|js|gif|png|jpg))$
 #   static_files: \1
 #   upload: .+\.(html|css|js|gif|png|jpg)$
-#   secure: always
+#   # secure: always
 
 # 上記以外は index.php
 - url: .*
   script: auto
   secure: always
+
+
+#############################################
+###   App Engine の性能を設定する            ###
+#############################################
+
+# # 一番性能が低い 28インスタンス時間
+# instance_class: F1
+
+# # 待機するインスタンスは最大１つ 3000ms超えたらインスタンス起動
+# automatic_scaling:
+#   min_idle_instances: automatic
+#   max_idle_instances: 1
+#   min_pending_latency: 3000ms
+#   max_pending_latency: automatic
+#   max_concurrent_requests: 80
