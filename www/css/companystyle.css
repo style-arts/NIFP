@@ -1,1 +1,52 @@
 @charset "utf-8";
+
+html{
+    font-size: 100%;
+}
+
+.wrapper{
+    padding: 50px 0;
+}
+
+.contents{
+    max-width: 750px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+h3{
+    color: rgb(12, 12, 116);
+}
+
+.nw{
+    display: flex;
+    margin-bottom: 70px;
+}
+
+.nw div{
+    padding-left: 50px;
+}
+
+.nw button{
+    color: #fff;
+    background-color: rgb(12, 12, 116);
+    padding: 10px 40px;
+    border-radius: 25px;
+}
+
+.ifp{
+    display: flex;
+}
+
+.ifp div{
+    padding-right: 50px;
+}
+
+.detail{
+    display: flex;
+}
+
+.detail img{
+    width: 50%;
+}
