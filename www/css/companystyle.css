@@ -19,6 +19,10 @@ h3{
     color: rgb(12, 12, 116);
 }
 
+ul{
+    list-style: none;
+}
+
 .nw{
     display: flex;
     margin-bottom: 70px;
@@ -26,6 +30,7 @@ h3{
 
 .nw div{
     padding-left: 50px;
+    
 }
 
 .nw button{
@@ -33,6 +38,14 @@ h3{
     background-color: rgb(12, 12, 116);
     padding: 10px 40px;
     border-radius: 25px;
+    position: relative;
+    display: inline-block;
+    border: none;
+}
+
+.nw button:hover{
+    top:-3px;
+    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
 }
 
 .ifp{
@@ -44,8 +57,79 @@ h3{
 }
 
 #support{
-    background: linear-gradient(rgb(250, 250, 191),rgb(236, 236, 253))
+    background: linear-gradient(rgb(250, 250, 191),rgb(236, 236, 253));
+    position: relative;
 }
+
+.fluid{
+    background-color: rgb(12, 12, 116);
+}
+
+#box1 {
+    position: absolute;
+    top: 150px;
+    left: 100px;
+    width:10vh;
+    height: 10vh;
+    background: rgb(12, 12, 116);
+}
+
+#box2 {
+    position: absolute;
+    top: 680px;
+    right: 100px;
+    width:10vh;
+    height: 10vh;
+    background:rgb(12, 12, 116);
+}
+
+#box3 {
+    position: absolute;
+    top: 1050px;
+    left: 100px;
+    width:10vh;
+    height: 10vh;
+    background:rgb(255, 82, 82);
+}
+
+#box4 {
+    position: absolute;
+    top: 1650px;
+    right: 100px;
+    width:10vh;
+    height: 10vh;
+    background:rgb(12, 12, 116);
+}
+
+.fluid{
+    animation: fluidrotate 10s ease 0s infinite;/*アニメーションの設定*/
+}
+
+@keyframes fluidrotate {  
+    
+    0%, 100% {
+        border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+    }
+    14% {
+        border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+    }
+    28% {
+        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+    }
+    42% {
+        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+    }
+    56% {
+        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+    }
+    70% {
+        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+    }
+    84% {
+        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+    }
+        
+    }
 
 .title{
     text-align: center;
@@ -72,4 +156,70 @@ h3{
 
 .flow img{
     margin-bottom: 40px;
+}
+
+.title{
+    margin-bottom: 30px;
+}
+
+.table th{
+    font-size: 20px;
+    color: #fff;
+    background-color: rgb(12, 12, 116);
+    padding: 20px;
+}
+
+.table{
+    border-spacing: 0px 20px;
+}
+
+.table td{
+    background-color: rgb(231, 229, 229);
+    padding-left: 20px;
+}
+
+.table p{
+    padding: 0;
+    margin: 0;
+}
+
+.table span{
+    color: rgb(255, 82, 82);
+}
+
+.sj ul{
+    padding-left: 0;
+}
+
+.sj span{
+    color: rgb(12, 12, 116);
+}
+
+.a{
+    margin-bottom: 20px;
+}
+
+.a h3{
+    text-align: center;
+    color: #fff;
+    padding: 5px auto;
+    background-color: rgb(12, 12, 116);
+}
+
+.a p{
+    margin: 0 auto;
+    color:rgb(12, 12, 116);
+}
+
+.footer{
+    background-color: rgb(12, 12, 116);
+    height: 2em;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.footer p{
+    color: #fff;
+    font-size: 12px;
 }
