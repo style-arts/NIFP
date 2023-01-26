@@ -1,8 +1,83 @@
 @charset "utf-8";
 
+:root {
+    --primary-color: #2B4C78;
+    --secondary-color: #D65564;
+}
+
 html{
     font-size: 100%;
 }
+ 
+/**
+ * 企業ページのKey Visual
+ **/
+#keyvisual {
+    width: 100vw;
+    height: 100vh;
+}
+#keyvisual .kv-wrapper .kv-background {
+    background: linear-gradient(90deg, #FEFDE2 0%, #FEFDE2 50%, #E5F0EE 50%, #E5F0EE 100%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+}
+#keyvisual .kv-wrapper .city-emblem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 1rem;
+}
+#keyvisual .kv-wrapper .circle {
+    position: absolute;
+    top: 3vw;
+    right: 10vw;
+    width: 6rem;
+    height: 6rem;
+
+    background-color: var(--secondary-color);
+    ;
+    color: white;
+    border-radius: 50%;
+    
+    padding: 0.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#keyvisual .kv-wrapper .circle .circle-text {
+    text-align: center
+}
+
+#keyvisual .kv-wrapper{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+#keyvisual .project-title-wrapper{
+    position: relative;
+    top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+#keyvisual .project-title-img {
+    width: 80%;
+    padding-bottom: 0.5rem;
+    border-bottom: solid 3px var(--primary-color);
+}
+#keyvisual .catch-phrase {
+    color: var(--primary-color);
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+#keyvisual .kv-illustration {
+    width: 80%;
+    max-width: 600px;
+}
+
 
 .wrapper{
     padding: 50px 0;
