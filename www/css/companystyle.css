@@ -1,353 +1,367 @@
 @charset "utf-8";
 
 :root {
-    --primary-color: #2B4C78;
-    --secondary-color: #D65564;
+  --primary-color: #2b4c78;
+  --secondary-color: #d65564;
 }
 
-html{
-    font-size: 100%;
+html {
+  font-size: 100%;
 }
- 
+
 /**
- * 企業ページのKey Visual
+ * [Begin] Key Visual
  **/
 #keyvisual {
-    width: 100vw;
-    /* height: 100vh; */
+  width: 100vw;
 }
+
 #keyvisual .kv-wrapper .kv-background {
-    background: linear-gradient(90deg, #FEFDE2 0%, #FEFDE2 50%, #E5F0EE 50%, #E5F0EE 100%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100vw;
-    height: 100%;
+  background: linear-gradient(
+    90deg,
+    #fefde2 0%,
+    #fefde2 50%,
+    #e5f0ee 50%,
+    #e5f0ee 100%
+  );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100%;
 }
+
 #keyvisual .kv-wrapper .city-emblem {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 1rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1rem;
 }
+
 #keyvisual .kv-wrapper .circle {
-    position: absolute;
-    top: 3vw;
-    right: 10vw;
-    width: 6rem;
-    height: 6rem;
-
-    background-color: var(--secondary-color);
-    ;
-    color: white;
-    border-radius: 50%;
-    
-    padding: 0.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  position: absolute;
+  top: 3vw;
+  right: 10vw;
+  width: 6rem;
+  height: 6rem;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 50%;
+  padding: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
 #keyvisual .kv-wrapper .circle .circle-text {
-    text-align: center
+  text-align: center;
 }
 
-#keyvisual .kv-wrapper{
-    position: relative;
-    display: flex;
-    justify-content: center;
+#keyvisual .kv-wrapper {
+  position: relative;
+  display: flex;
+  justify-content: center;
 }
-#keyvisual .project-title-wrapper{
-    position: relative;
-    top: 8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+#keyvisual .project-title-wrapper {
+  position: relative;
+  top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
 #keyvisual .project-title-img {
-    width: 80%;
-    padding-bottom: 0.5rem;
-    border-bottom: solid 3px var(--primary-color);
+  width: 80%;
+  padding-bottom: 0.5rem;
+  border-bottom: solid 3px var(--primary-color);
 }
+
 #keyvisual .catch-phrase {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    font-weight: bolder;
+  color: var(--primary-color);
+  font-size: 1.5rem;
+  font-weight: bolder;
 }
+
 #keyvisual .kv-illustration {
-    width: 80%;
-    max-width: 600px;
+  width: 80%;
+  max-width: 600px;
 }
 
 #keyvisual .kv-apply-area {
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    background-color: var(--primary-color);
-    color: white;
-    padding: 3rem 0 2rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--primary-color);
+  color: white;
+  padding: 3rem 0 2rem;
 }
 
 #keyvisual .speech-bubble {
-    position: absolute;
-    top: -2rem;
-    background-color: white;
-    color: var(--primary-color);
-    width: fit-content;
-    padding: 0.5rem 1rem;
-    border: 2px solid var(--primary-color);
-    border-radius: 4rem;
-    font-weight: bolder;
-    font-size: 2rem;
+  position: absolute;
+  top: -2rem;
+  background-color: white;
+  color: var(--primary-color);
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  border: 2px solid var(--primary-color);
+  border-radius: 4rem;
+  font-weight: bolder;
+  font-size: 2rem;
 }
+
 #keyvisual .kv-apply-subtext {
-    font-size: 1.5rem;
-    font-weight: bolder;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+
+#keyvisual .kv-apply-maintext {
+  font-size: 3rem;
+  font-weight: bolder;
 }
 
 #keyvisual .kv-apply-maintext {
     font-size: 3rem;
-    font-weight: bolder;
-}
-#keyvisual .kv-apply-maintext {
-    font-size: 3rem;
-    font-weight: bolder;
+  font-weight: bolder;
 }
 
 #keyvisual .kv-apply-button {
-    font-size: 1.5rem;
-    position: relative;
-    top:0;
-    background-color: var(--secondary-color);
-    color: white;
-    border-radius: 2rem;
-    text-decoration: none;
-    padding: 0.3rem 2rem;
-    /*アニメーションの設定*/
-    transition: all .3s;
+  font-size: 1.5rem;
+  position: relative;
+  top: 0;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 2rem;
+  text-decoration: none;
+  padding: 0.3rem 2rem;
+  /*アニメーションの設定*/
+  transition: all 0.3s;
 }
 #keyvisual .kv-apply-button:hover {
-    top: -3px;
-    box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+  top: -3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
 }
 
+/**
+ * [End] Key Visual
+ **/
 
-.wrapper{
-    padding: 50px 0;
+
+.wrapper {
+  padding: 50px 0;
 }
 
-.contents{
-    max-width: 750px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+.contents {
+  max-width: 750px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
 }
 
-h3{
-    color: rgb(12, 12, 116);
+h3 {
+  color: rgb(12, 12, 116);
 }
 
-ul{
-    list-style: none;
+ul {
+  list-style: none;
 }
 
-.nw{
-    display: flex;
-    margin-bottom: 70px;
+.nw {
+  display: flex;
+  margin-bottom: 70px;
 }
 
-.nw div{
-    padding-left: 50px;
-    
+.nw div {
+  padding-left: 50px;
 }
 
-.nw button{
-    color: #fff;
-    background-color: rgb(12, 12, 116);
-    padding: 10px 40px;
-    border-radius: 25px;
-    position: relative;
-    display: inline-block;
-    border: none;
+.nw button {
+  color: #fff;
+  background-color: rgb(12, 12, 116);
+  padding: 10px 40px;
+  border-radius: 25px;
+  position: relative;
+  display: inline-block;
+  border: none;
 }
 
-.nw button:hover{
-    top:-3px;
-    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
+.nw button:hover {
+  top: -3px;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
 }
 
-.ifp{
-    display: flex;
+.ifp {
+  display: flex;
 }
 
-.ifp div{
-    padding-right: 50px;
+.ifp div {
+  padding-right: 50px;
 }
 
-#support{
-    background: linear-gradient(rgb(250, 250, 191),rgb(236, 236, 253));
-    position: relative;
+#support {
+  background: linear-gradient(rgb(250, 250, 191), rgb(236, 236, 253));
+  position: relative;
 }
 
-.fluid{
-    background-color: rgb(12, 12, 116);
+.fluid {
+  background-color: rgb(12, 12, 116);
 }
 
 #box1 {
-    position: absolute;
-    top: 150px;
-    left: 100px;
-    width:10vh;
-    height: 10vh;
-    background: rgb(12, 12, 116);
+  position: absolute;
+  top: 150px;
+  left: 100px;
+  width: 10vh;
+  height: 10vh;
+  background: rgb(12, 12, 116);
 }
 
 #box2 {
-    position: absolute;
-    top: 680px;
-    right: 100px;
-    width:10vh;
-    height: 10vh;
-    background:rgb(12, 12, 116);
+  position: absolute;
+  top: 680px;
+  right: 100px;
+  width: 10vh;
+  height: 10vh;
+  background: rgb(12, 12, 116);
 }
 
 #box3 {
-    position: absolute;
-    top: 1050px;
-    left: 100px;
-    width:10vh;
-    height: 10vh;
-    background:rgb(255, 82, 82);
+  position: absolute;
+  top: 1050px;
+  left: 100px;
+  width: 10vh;
+  height: 10vh;
+  background: rgb(255, 82, 82);
 }
 
 #box4 {
-    position: absolute;
-    top: 1650px;
-    right: 100px;
-    width:10vh;
-    height: 10vh;
-    background:rgb(12, 12, 116);
+  position: absolute;
+  top: 1650px;
+  right: 100px;
+  width: 10vh;
+  height: 10vh;
+  background: rgb(12, 12, 116);
 }
 
-.fluid{
-    animation: fluidrotate 10s ease 0s infinite;/*アニメーションの設定*/
+.fluid {
+  animation: fluidrotate 10s ease 0s infinite; /*アニメーションの設定*/
 }
 
-@keyframes fluidrotate {  
-    
-    0%, 100% {
-        border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
-    }
-    14% {
-        border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
-    }
-    28% {
-        border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
-    }
-    42% {
-        border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
-    }
-    56% {
-        border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
-    }
-    70% {
-        border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
-    }
-    84% {
-        border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
-    }
-        
-    }
-
-.title{
-    text-align: center;
+@keyframes fluidrotate {
+  0%,
+  100% {
+    border-radius: 63% 37% 54% 46%/55% 48% 52% 45%;
+  }
+  14% {
+    border-radius: 40% 60% 54% 46%/49% 60% 40% 51%;
+  }
+  28% {
+    border-radius: 54% 46% 38% 62%/49% 70% 30% 51%;
+  }
+  42% {
+    border-radius: 61% 39% 55% 45%/61% 38% 62% 39%;
+  }
+  56% {
+    border-radius: 61% 39% 67% 33%/70% 50% 50% 30%;
+  }
+  70% {
+    border-radius: 50% 50% 34% 66%/56% 68% 32% 44%;
+  }
+  84% {
+    border-radius: 46% 54% 50% 50%/35% 61% 39% 65%;
+  }
 }
 
-.detail{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 30px;
+.title {
+  text-align: center;
 }
 
-.detail div{
-    padding: 20px;
+.detail {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
 
-.detail img{
-    width: 50%;
+.detail div {
+  padding: 20px;
 }
 
-.flow{
-    text-align: center;
-    margin: 50px 0;
+.detail img {
+  width: 50%;
 }
 
-.flow img{
-    margin-bottom: 40px;
+.flow {
+  text-align: center;
+  margin: 50px 0;
 }
 
-.title{
-    margin-bottom: 30px;
+.flow img {
+  margin-bottom: 40px;
 }
 
-.table th{
-    font-size: 20px;
-    color: #fff;
-    background-color: rgb(12, 12, 116);
-    padding: 20px;
+.title {
+  margin-bottom: 30px;
 }
 
-.table{
-    border-spacing: 0px 20px;
+.table th {
+  font-size: 20px;
+  color: #fff;
+  background-color: rgb(12, 12, 116);
+  padding: 20px;
 }
 
-.table td{
-    background-color: rgb(231, 229, 229);
-    padding-left: 20px;
+.table {
+  border-spacing: 0px 20px;
 }
 
-.table p{
-    padding: 0;
-    margin: 0;
+.table td {
+  background-color: rgb(231, 229, 229);
+  padding-left: 20px;
 }
 
-.table span{
-    color: rgb(255, 82, 82);
+.table p {
+  padding: 0;
+  margin: 0;
 }
 
-.sj ul{
-    padding-left: 0;
+.table span {
+  color: rgb(255, 82, 82);
 }
 
-.sj span{
-    color: rgb(12, 12, 116);
+.sj ul {
+  padding-left: 0;
 }
 
-.a{
-    margin-bottom: 20px;
+.sj span {
+  color: rgb(12, 12, 116);
 }
 
-.a h3{
-    text-align: center;
-    color: #fff;
-    padding: 5px auto;
-    background-color: rgb(12, 12, 116);
+.a {
+  margin-bottom: 20px;
 }
 
-.a p{
-    margin: 0 auto;
-    color:rgb(12, 12, 116);
+.a h3 {
+  text-align: center;
+  color: #fff;
+  padding: 5px auto;
+  background-color: rgb(12, 12, 116);
 }
 
-.footer{
-    background-color: rgb(12, 12, 116);
-    height: 2em;
-    align-items: center;
-    display: flex;
-    justify-content: center;
+.a p {
+  margin: 0 auto;
+  color: rgb(12, 12, 116);
 }
 
-.footer p{
-    color: #fff;
-    font-size: 12px;
+.footer {
+  background-color: rgb(12, 12, 116);
+  height: 2em;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+}
+
+.footer p {
+  color: #fff;
+  font-size: 12px;
 }
