@@ -285,7 +285,7 @@ ul {
   width: 70%;
 }
 
-.voice{
+#voice{
   display: flex;
   flex-direction: column;
 }
@@ -350,10 +350,29 @@ ul {
   padding: 5px 0;
   background-color: var(--primary-color);
   background-color: var(--primary-color);
-      /* text-align: center; */
-    /* color: #fff; */
-    /* padding: 5px 0; */
-    /* background-color: rgb(12, 12, 116);*/
+}
+
+#company{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: aquamarine;
+  color: #fff;
+}
+
+.ctitle{
+  text-align: center;
+}
+
+.cphoto{
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cimg p{
+  text-align: center;
 }
 
 .title {
