@@ -159,7 +159,7 @@ html {
 }
 
 h3 {
-  color: rgb(12, 12, 116);
+  color: var(--primary-color);
 }
 
 ul {
@@ -177,7 +177,7 @@ ul {
 
 .nw button {
   color: #fff;
-  background-color: rgb(12, 12, 116);
+  background-color: var(--primary-color);
   padding: 10px 40px;
   border-radius: 25px;
   position: relative;
@@ -204,7 +204,7 @@ ul {
 }
 
 .fluid {
-  background-color: rgb(12, 12, 116);
+  background-color: var(--primary-color);
 }
 
 #box1 {
@@ -213,7 +213,7 @@ ul {
   left: 100px;
   width: 10vh;
   height: 10vh;
-  background: rgb(12, 12, 116);
+  background: var(--primary-color);
 }
 
 #box2 {
@@ -222,7 +222,7 @@ ul {
   right: 100px;
   width: 10vh;
   height: 10vh;
-  background: rgb(12, 12, 116);
+  background: var(--primary-color);
 }
 
 #box3 {
@@ -231,7 +231,7 @@ ul {
   left: 100px;
   width: 10vh;
   height: 10vh;
-  background: rgb(255, 82, 82);
+  background: var(--secondary-color);
 }
 
 #box4 {
@@ -240,7 +240,7 @@ ul {
   right: 100px;
   width: 10vh;
   height: 10vh;
-  background: rgb(12, 12, 116);
+  background: var(--primary-color);
 }
 
 .fluid {
@@ -299,7 +299,7 @@ ul {
 .table th {
   font-size: 20px;
   color: #fff;
-  background-color: rgb(12, 12, 116);
+  background-color: var(--primary-color);
   padding: 20px;
 }
 
@@ -318,7 +318,7 @@ ul {
 }
 
 .table span {
-  color: rgb(255, 82, 82);
+  color: var(--secondary-color);
 }
 
 .sj ul {
@@ -326,7 +326,7 @@ ul {
 }
 
 .sj span {
-  color: rgb(12, 12, 116);
+  color: var(--primary-color);
 }
 
 .a {
@@ -336,17 +336,22 @@ ul {
 .a h3 {
   text-align: center;
   color: #fff;
-  padding: 5px auto;
-  background-color: rgb(12, 12, 116);
+  padding: 5px 0;
+  background-color: var(--primary-color);
+  background-color: var(--primary-color);
+      /* text-align: center; */
+    /* color: #fff; */
+    /* padding: 5px 0; */
+    /* background-color: rgb(12, 12, 116);*/
 }
 
 .a p {
   margin: 0 auto;
-  color: rgb(12, 12, 116);
+  color: var(--primary-color);
 }
 
 .footer {
-  background-color: rgb(12, 12, 116);
+  background-color: var(--primary-color);
   height: 2em;
   align-items: center;
   display: flex;
