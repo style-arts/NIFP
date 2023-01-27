@@ -3,6 +3,7 @@
 :root {
   --primary-color: #2b4c78;
   --secondary-color: #d65564;
+  --tertiary-color: rgb(9, 156, 137);
 }
 
 html {
@@ -159,52 +160,37 @@ html {
 }
 
 h3 {
-  color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 ul {
   list-style: none;
 }
 
-.nw {
+.recommendation{
   display: flex;
-  margin-bottom: 70px;
+  flex-direction: column;
+  align-items: center;
 }
 
-.nw div {
-  padding-left: 50px;
+.konnakata{
+  width: 500px;
+  margin-bottom: 50px;
 }
 
-.nw button {
-  color: #fff;
-  background-color: var(--primary-color);
-  padding: 10px 40px;
-  border-radius: 25px;
-  position: relative;
-  display: inline-block;
-  border: none;
-}
-
-.nw button:hover {
-  top: -3px;
-  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
-}
-
-.ifp {
+.rec{
   display: flex;
+  justify-content: space-between;
+  width: 75%;
 }
 
-.ifp div {
-  padding-right: 50px;
+.recphoto{
+  text-align: center;
 }
 
-#support {
+#join {
   background: linear-gradient(rgb(250, 250, 191), rgb(236, 236, 253));
   position: relative;
-}
-
-.fluid {
-  background-color: var(--primary-color);
 }
 
 #box1 {
@@ -213,7 +199,7 @@ ul {
   left: 100px;
   width: 10vh;
   height: 10vh;
-  background: var(--primary-color);
+  background: var(--tertiary-color);
 }
 
 #box2 {
@@ -222,7 +208,7 @@ ul {
   right: 100px;
   width: 10vh;
   height: 10vh;
-  background: var(--primary-color);
+  background: var(--tertiary-color);
 }
 
 #box3 {
@@ -237,14 +223,14 @@ ul {
 #box4 {
   position: absolute;
   top: 1650px;
-  right: 100px;
+  right: 60px;
   width: 10vh;
   height: 10vh;
-  background: var(--primary-color);
+  background: var(--tertiary-color);
 }
 
 .fluid {
-  animation: mochimochi 7s infinite;
+  animation: mochimochi 5s infinite;
   animation-timing-function: linear;
 }
 
@@ -252,11 +238,12 @@ ul {
   0% {
     transform: scale(1.1, 0.8);
   }
+  /*
   20% {
     transform: scale(1.1, 0.8);
   }
-
-  80% {
+*/
+  50% {
     transform: scale(0.8, 1.1);
   }
 
@@ -285,11 +272,104 @@ ul {
 
 .flow {
   text-align: center;
-  margin: 50px 0;
+  margin: 100px 0;
 }
 
 .flow img {
   margin-bottom: 40px;
+}
+
+.fimg{
+  width: 70%;
+}
+
+#voice{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.vtitle{
+  text-align: center;
+}
+
+.voice-container{
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+}
+
+.voice-container1{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.voice-container2{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.profile{
+  width: 50%;
+}
+
+.table2 p{
+  line-height: 50px;
+  border-bottom: 2px solid #000;
+  font-weight: bold;
+  margin: 0;
+}
+
+.table2 p:last-child{
+  border-bottom: none;
+}
+
+.name{
+  padding-left: 114px;
+  color: #000;
+  font-weight: normal;
+}
+
+.grade{
+  padding-left: 65px;
+  color: #000;
+  font-weight: normal;
+}
+
+.intern{
+  padding-left: 50px;
+  font-weight: normal;
+}
+
+.q h3 {
+  color: #fff;
+  padding: 5px 0;
+  background-color: var(--tertiary-color);
+}
+
+#company{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--tertiary-color);
+  color: #fff;
+}
+
+.ctitle{
+  text-align: center;
+}
+
+.cphoto{
+  width: 75%;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.cimg p{
+  text-align: center;
 }
 
 .title {
@@ -299,7 +379,7 @@ ul {
 .table th {
   font-size: 20px;
   color: #fff;
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color);
   padding: 20px;
 }
 
@@ -326,7 +406,7 @@ ul {
 }
 
 .sj span {
-  color: var(--primary-color);
+  color: var(--tertiary-color);
 }
 
 .a {
@@ -337,21 +417,15 @@ ul {
   text-align: center;
   color: #fff;
   padding: 5px 0;
-  background-color: var(--primary-color);
-  background-color: var(--primary-color);
-      /* text-align: center; */
-    /* color: #fff; */
-    /* padding: 5px 0; */
-    /* background-color: rgb(12, 12, 116);*/
+  background-color: var(--tertiary-color);
 }
 
 .a p {
   margin: 0 auto;
-  color: var(--primary-color);
 }
 
 .footer {
-  background-color: var(--primary-color);
+  background-color: var(--tertiary-color);
   height: 2em;
   align-items: center;
   display: flex;
