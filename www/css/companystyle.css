@@ -1,8 +1,9 @@
 @charset "utf-8";
 
 :root {
-  --primary-color: #2b4c78;
-  --secondary-color: #d65564;
+  --primary-color: #004a7b;
+  --secondary-color: #f55464;
+  --tertiary-color: #009d88;
 }
 
 html {
@@ -51,6 +52,7 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: content-box;
 }
 
 #keyvisual .kv-wrapper .circle .circle-text {
@@ -109,6 +111,35 @@ html {
   border-radius: 4rem;
   font-weight: bolder;
   font-size: 2rem;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+/* 吹き出しのしっぽ：本体の背景色用 */
+#keyvisual .speech-bubble::before {
+  content: "";
+  position: absolute;
+  bottom: calc(-1.5rem + 1px);
+  left: calc(50% - 0.25rem);
+  transform: translateX(-50%);
+  border-width: 0.75rem;
+  border-style: solid;
+  border-color: white transparent transparent transparent;
+  z-index: 2;
+}
+
+/* 吹き出しのしっぽ：枠線の色用 */
+#keyvisual .speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: calc(-2rem + 4px) ;
+  left: calc(50% - 0.25rem);
+  transform: translateX(-50%);
+  border-width: 0.9rem;
+  border-style: solid;
+  border-right: 0px solid transparent;
+  border-color: var(--primary-color) transparent transparent transparent;
+  z-index: 1;
 }
 
 #keyvisual .kv-apply-subtext {
