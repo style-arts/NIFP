@@ -1,3 +1,41 @@
-.title {
-  color: red;
+/**
+ * [Begin] Side Bar
+ **/
+#sidebar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  z-index: 10;
 }
+
+.side-button {
+  font-size: 1.3rem;
+  font-weight: bolder;
+  writing-mode: vertical-rl;
+  color: white;
+  background-color: var(--secondary-color);
+  
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-radius: 0.7rem 0 0 0.7rem;
+}
+
+/* Side bar のアニメーション */
+#sidebar {
+  transition: opacity 0.5s, transform 0.5s; 
+  opacity: 0;
+  transform: translateX(100%);
+}
+#sidebar.is-show {
+  opacity: 1;
+  transform: translateX(0);
+}
+/**
+ * [End] Side Bar
+ **/
