@@ -1,11 +1,5 @@
 @charset "utf-8";
 
-:root {
-  --primary-color: #004a7b;
-  --secondary-color: #f55464;
-  --tertiary-color: #009d88;
-}
-
 html {
   font-size: 100%;
 }
@@ -14,6 +8,9 @@ html {
  * [Begin] Key Visual
  **/
 #keyvisual {
+  width: 100vw;
+}
+.keyvisual {
   width: 100vw;
 }
 

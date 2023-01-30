@@ -9,11 +9,21 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/companystyle.css" />
     <!-- <script src="js/main.js"></script> -->
   </head>
 
   <body>
+    <div id="sidebar">
+      <a
+        href="https://forms.gle/wPNo3gfbUPDN5sKw9"
+        style="text-decoration: none"
+      >
+        <div class="side-button" id="side-button-apply">お申し込みはこちら</div>
+      </a>
+    </div>
+
     <div id="keyvisual">
       <div class="kv-wrapper">
         <img src="img/logo.svg" alt="長岡市のエンブレム" class="city-emblem" />
@@ -40,7 +50,7 @@
           />
         </div>
       </div>
-      <div id="keyvisual">
+      <div class="keyvisual">
         <div class="kv-apply-area">
           <div class="speech-bubble">
             令和４年度
@@ -52,8 +62,9 @@
 
           <div class="kv-apply-subtext">IT系学生のリモートインターシップ</div>
           <div class="kv-apply-maintext">参加企業募集中!!</div>
-          <!-- TODO: 遷移リンクを記載する -->
-          <a href="#" class="kv-apply-button">お申し込みはこちらから</a>
+          <a href="https://forms.gle/wPNo3gfbUPDN5sKw9" class="kv-apply-button"
+            >お申し込みはこちらから</a
+          >
         </div>
       </div>
     </div>
@@ -70,6 +81,7 @@
               踏まえて有能な人材を抱える地方拠点を設けたい」という企業のニーズの両立を実現。ウィズコロナウィルス時代に対応した
               時間や場所に捉えわれないワークスタイルイノベーションに取り組んでいます。
             </p>
+            <!-- TODO: edit the link below-->
             <button href="#">詳しくはこちら</button>
           </div>
         </div>
@@ -173,7 +185,7 @@
         </table>
         <div class="a">
           <h3>申し込み方法</h3>
-          <p><a href="#">こちら</a>から参加申し込みをしてください。</p>
+          <p><a href="https://forms.gle/wPNo3gfbUPDN5sKw9">こちら</a>から参加申し込みをしてください。</p>
           <p>
             ご回答いただいたメールアドレスに学生の紹介とSlackの招待をお送りします。
           </p>
@@ -190,7 +202,7 @@
         <div class="a">
           <h3>お問い合わせ</h3>
           <p>NIFP事務局 企業サポート</p>
-          <p>株式会社KUNO メールでのお問い合わせは<a href="#">こちら</a></p>
+          <p>株式会社KUNO メールでのお問い合わせは<a href="mailto:kunosales@kuno-corp.com">こちら</a></p>
         </div>
       </div>
     </section>
@@ -198,5 +210,6 @@
     <section class="footer">
       <p>NIFP事務局 All Rights Reserved</p>
     </section>
+    <script src="js/toggle-sidebar.js"></script>
   </body>
 </html>
