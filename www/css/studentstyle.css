@@ -1,9 +1,9 @@
 @charset "utf-8";
 
 :root {
-  --primary-color: #2b4c78;
-  --secondary-color: #d65564;
-  --tertiary-color: rgb(9, 156, 137);
+  --primary-color: #004a7b;
+  --secondary-color: #f55464;
+  --tertiary-color: #009d88;
 }
 
 html {
@@ -20,10 +20,10 @@ html {
 #keyvisual .kv-wrapper .kv-background {
   background: linear-gradient(
     90deg,
-    #fefde2 0%,
-    #fefde2 50%,
-    #e5f0ee 50%,
-    #e5f0ee 100%
+    #fefde1 0%,
+    #fefde1 50%,
+    #e2f2ef 50%,
+    #e2f2ef 100%
   );
   display: flex;
   flex-direction: column;
@@ -52,10 +52,12 @@ html {
   display: flex;
   align-items: center;
   justify-content: center;
+  box-sizing: content-box;
 }
 
 #keyvisual .kv-wrapper .circle .circle-text {
   text-align: center;
+  font-size: 2.5rem;
 }
 
 #keyvisual .kv-wrapper {
@@ -75,13 +77,21 @@ html {
 #keyvisual .project-title-img {
   width: 80%;
   padding-bottom: 0.5rem;
-  border-bottom: solid 3px var(--primary-color);
 }
 
 #keyvisual .catch-phrase {
   color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: bolder;
+  border-bottom: solid 2px var(--primary-color);
+  margin-bottom: 1rem;
+  padding-bottom: 0.5rem;
+}
+#keyvisual .catch-phrase-index {
+  border: solid 1px var(--primary-color);
+  padding: 0.2rem 0.5rem;
+  font-size: 1.3rem;
+  font-weight: medium;
 }
 
 #keyvisual .kv-illustration {
@@ -89,31 +99,78 @@ html {
   max-width: 600px;
 }
 
+#keyvisual .kv-recruitment-area {
+  background-color: var(--tertiary-color);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  padding: 0.5em 10%;
+}
+
 #keyvisual .kv-apply-area {
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: var(--primary-color);
-  color: white;
-  padding: 3rem 0 2rem;
+  background-color: #E6F2F0;
+  color: var(--primary-color);
+  padding: 1rem 10%;
+}
+
+.kv-apply-maintext-wrapper{
+  position: relative;
+  display: flex;
+  align-items: center;
 }
 
 #keyvisual .speech-bubble {
   position: absolute;
-  top: -2rem;
-  background-color: white;
-  color: var(--primary-color);
+  top: -1.5rem;
+  left: -3rem;
+  display: inline-block;
+  background: var(--primary-color);
+  border-radius: 2rem;
+  padding: 0.4rem 1rem;
+  font-weight: bold;
+  font-size: 1rem;
+  color: white;
+  border: 2px solid white;
+  box-sizing: border-box;
   width: fit-content;
-  padding: 0.5rem 1rem;
-  border: 2px solid var(--primary-color);
-  border-radius: 4rem;
-  font-weight: bolder;
-  font-size: 2rem;
+}
+
+/* 吹き出しのしっぽ：本体の背景色用 */
+#keyvisual .speech-bubble::before {
+  content: "";
+  position: absolute;
+  bottom: calc(-1.5rem + 1px);
+  left: calc(50% - 0.25rem);
+  transform: translateX(-50%);
+  border-width: 0.75rem;
+  border-style: solid;
+  border-right: 0px solid transparent;
+  border-color: var(--primary-color) transparent transparent transparent;
+  z-index: 2;
+}
+
+/* 吹き出しのしっぽ：枠線の色用 */
+#keyvisual .speech-bubble::after {
+  content: "";
+  position: absolute;
+  bottom: calc(-2rem + 4px) ;
+  left: calc(50% - 0.25rem);
+  transform: translateX(-50%);
+  border-width: 0.9rem;
+  border-style: solid;
+  border-right: 0px solid transparent;
+  border-color: white transparent transparent transparent;
+  z-index: 1;
 }
 
 #keyvisual .kv-apply-subtext {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   font-weight: bolder;
 }
 
