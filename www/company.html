@@ -9,11 +9,19 @@
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/companystyle.css" />
     <!-- <script src="js/main.js"></script> -->
   </head>
 
   <body>
+    <div id="sidebar">
+      <!-- TODO: 遷移リンクを記載する -->
+      <a href="#" style="text-decoration: none">
+        <div class="side-button">お申し込みはこちら</div>
+      </a>
+    </div>
+
     <div id="keyvisual">
       <div class="kv-wrapper">
         <img src="img/logo.svg" alt="長岡市のエンブレム" class="city-emblem" />
@@ -40,7 +48,7 @@
           />
         </div>
       </div>
-      <div id="keyvisual">
+      <div class="keyvisual">
         <div class="kv-apply-area">
           <div class="speech-bubble">
             令和４年度
@@ -198,5 +206,6 @@
     <section class="footer">
       <p>NIFP事務局 All Rights Reserved</p>
     </section>
+    <script src="js/toggle-sidebar.js"></script>
   </body>
 </html>
