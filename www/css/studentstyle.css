@@ -213,7 +213,7 @@ html {
   margin: 0 auto;
 }
 
-h3 {
+h1, h3 {
   color: var(--tertiary-color);
 }
 
@@ -228,7 +228,7 @@ ul {
 }
 
 .konnakata{
-  width: 500px;
+  width: 30%;
   margin-bottom: 50px;
 }
 
@@ -245,6 +245,13 @@ ul {
 #join {
   background: linear-gradient(rgb(250, 250, 191), rgb(236, 236, 253));
   position: relative;
+}
+
+.jtitle{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
 }
 
 #box1 {
@@ -306,27 +313,41 @@ ul {
   }
 }
 
-.title{
-  text-align: center;
+.detail1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
-
-.detail {
+.detail2 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 
-.detail div {
-  padding: 20px;
+.detail1 div {
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
-.detail img {
+.detail2 div {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.detail1 img, .detail2 img {
   width: 50%;
 }
 
+.detail1 span, .detail2 span{
+  display: inline-block;
+}
+
 .flow {
-  text-align: center;
-  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .flow img {
@@ -380,20 +401,24 @@ ul {
   border-bottom: none;
 }
 
+.table2 span{
+  float: right;
+}
+
 .name{
-  padding-left: 114px;
+  padding-right: 50%;
   color: #000;
   font-weight: normal;
 }
 
 .grade{
-  padding-left: 65px;
+  padding-right: 50%;
   color: #000;
   font-weight: normal;
 }
 
 .intern{
-  padding-left: 50px;
+  padding-right: 50%;
   font-weight: normal;
 }
 
@@ -426,8 +451,12 @@ ul {
   text-align: center;
 }
 
-.title {
-  margin-bottom: 30px;
+.btitle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .table th {
