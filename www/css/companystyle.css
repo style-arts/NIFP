@@ -18,11 +18,14 @@
     #e5f0ee 50%,
     #e5f0ee 100%
   );
+  width: 100vw;
+  height: 100%;
+}
+
+#keyvisual .kv-main-area {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  height: 100%;
 }
 
 #keyvisual .kv-wrapper .city-emblem {
@@ -30,6 +33,7 @@
   top: 0;
   left: 0;
   margin: 1rem;
+  max-width: 130px;
 }
 
 #keyvisual .kv-wrapper .circle {
@@ -106,6 +110,7 @@
   font-size: 2rem;
   display: inline-block;
   box-sizing: border-box;
+  text-align: center;
 }
 
 /* 吹き出しのしっぽ：本体の背景色用 */
@@ -125,7 +130,7 @@
 #keyvisual .speech-bubble::after {
   content: "";
   position: absolute;
-  bottom: calc(-2rem + 4px) ;
+  bottom: calc(-2rem + 4px);
   left: calc(50% - 0.25rem);
   transform: translateX(-50%);
   border-width: 0.9rem;
@@ -138,6 +143,7 @@
 #keyvisual .kv-apply-subtext {
   font-size: 1.5rem;
   font-weight: bolder;
+  text-align: center;
 }
 
 #keyvisual .kv-apply-maintext {
@@ -289,7 +295,7 @@ ul {
   }
 }
 
-.title{
+.title {
   text-align: center;
 }
 
@@ -363,10 +369,10 @@ ul {
   padding: 5px 0;
   background-color: var(--primary-color);
   background-color: var(--primary-color);
-      /* text-align: center; */
-    /* color: #fff; */
-    /* padding: 5px 0; */
-    /* background-color: rgb(12, 12, 116);*/
+  /* text-align: center; */
+  /* color: #fff; */
+  /* padding: 5px 0; */
+  /* background-color: rgb(12, 12, 116);*/
 }
 
 .a p {
@@ -394,5 +400,48 @@ ul {
 
 /* スマホ (520px以下) */
 @media screen and (max-width: 520px) {
+  #keyvisual .kv-wrapper .circle {
+    top: 2vw;
+    right: 2vw;
+    width: 5.5rem;
+    height: 5.5rem;
+  }
 
+  #keyvisual .kv-wrapper .circle .circle-text {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  #keyvisual .catch-phrase {
+    font-size: 1rem;
+  }
+
+  #keyvisual .speech-bubble {
+    top: -2rem;
+    width: fit-content;
+    margin: 0 1rem;
+    font-size: 1.125rem; /* 18px */
+  }
+
+  #keyvisual .kv-apply-subtext {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  #keyvisual .kv-apply-maintext {
+    font-size: 2rem;
+  }
+
+  #keyvisual .kv-apply-button {
+    font-size: 1.125rem; /* 18px */
+  }
+  #keyvisual .project-title-wrapper {
+    top: auto;
+  }
+
+  #keyvisual .kv-main-area {
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
+    height: 100%;
+    justify-content: center;
+  }
 }
