@@ -267,8 +267,8 @@ ul {
   position: absolute;
   top: 680px;
   right: 100px;
-  width: 10vh;
-  height: 10vh;
+  width: 7vh;
+  height: 7vh;
   background: var(--tertiary-color);
 }
 
@@ -285,9 +285,27 @@ ul {
   position: absolute;
   top: 1650px;
   right: 60px;
-  width: 10vh;
-  height: 10vh;
+  width: 7vh;
+  height: 7vh;
   background: var(--tertiary-color);
+}
+
+#box5 {
+  position: absolute;
+  top: 210px;
+  left: 160px;
+  width: 5vh;
+  height: 5vh;
+  background: var(--secondary-color);
+}
+
+#box6 {
+  position: absolute;
+  top: 1690px;
+  right: 40px;
+  width: 4vh;
+  height: 4vh;
+  background: var(--secondary-color);
 }
 
 .fluid {
