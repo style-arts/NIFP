@@ -73,4 +73,14 @@ span{
 
 /* スマホ (520px以下) */
 @media screen and (max-width: 520px) {
+  .side-button {
+    font-size: 1rem;
+    font-weight: bolder;
+    writing-mode: vertical-rl;
+    color: white;
+    background-color: var(--secondary-color);
+    margin: 0.4rem 0;
+    padding: 0.5rem;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
 }
