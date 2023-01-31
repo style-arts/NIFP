@@ -486,3 +486,14 @@ ul {
   color: #fff;
   font-size: 12px;
 }
+
+
+/* タブレット (960px以下) */
+@media screen and (max-width: 960px) {
+  /* NOTE: 今回はタブレットは無視する */
+}
+
+/* スマホ (520px以下) */
+@media screen and (max-width: 520px) {
+
+}

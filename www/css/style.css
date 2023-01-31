@@ -1,7 +1,7 @@
 /**
  * 全てのページで適用するCSSを記述する 
  **/
- @charset "utf-8";
+@charset "utf-8";
 
 :root {
   --primary-color: #004a7b;
@@ -14,7 +14,7 @@ html {
   font-size: 100%;
 }
 
- /**
+/**
  * [Begin] Side Bar
  **/
 #sidebar {
@@ -22,11 +22,11 @@ html {
   top: 0;
   right: 0;
   height: 100vh;
-  
+
   display: flex;
   flex-direction: column;
   justify-content: center;
-  
+
   z-index: 10;
 }
 
@@ -36,7 +36,7 @@ html {
   writing-mode: vertical-rl;
   color: white;
   background-color: var(--secondary-color);
-  
+
   margin: 0.5rem 0;
   padding: 1rem;
   border-radius: 0.7rem 0 0 0.7rem;
@@ -50,7 +50,7 @@ html {
 
 /* Side bar のアニメーション */
 #sidebar {
-  transition: opacity 0.5s, transform 0.5s; 
+  transition: opacity 0.5s, transform 0.5s;
   opacity: 0;
   transform: translateX(100%);
 }
@@ -61,3 +61,12 @@ html {
 /**
  * [End] Side Bar
  **/
+
+/* タブレット (960px以下) */
+@media screen and (max-width: 960px) {
+  /* NOTE: 今回はタブレットは無視する */
+}
+
+/* スマホ (520px以下) */
+@media screen and (max-width: 520px) {
+}
