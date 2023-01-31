@@ -6,7 +6,7 @@
 #keyvisual {
   width: 100vw;
 }
-.keyvisual {
+.kv-apply-area-wrapper {
   width: 100vw;
 }
 
@@ -18,11 +18,14 @@
     #e2f2ef 50%,
     #e2f2ef 100%
   );
+  width: 100vw;
+  height: 100%;
+}
+
+#keyvisual .kv-main-area {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100vw;
-  height: 100%;
 }
 
 #keyvisual .kv-wrapper .city-emblem {
@@ -30,6 +33,7 @@
   top: 0;
   left: 0;
   margin: 1rem;
+  max-width: 130px;
 }
 
 #keyvisual .kv-wrapper .circle {
@@ -76,6 +80,7 @@
   color: var(--primary-color);
   font-size: 1.5rem;
   font-weight: bolder;
+  text-align: center;
   border-bottom: solid 2px var(--primary-color);
   margin-bottom: 1rem;
   padding-bottom: 0.5rem;
@@ -88,7 +93,7 @@
 }
 
 #keyvisual .kv-illustration {
-  width: 80%;
+  width: 50%;
   max-width: 600px;
 }
 
@@ -107,12 +112,12 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  background-color: #E6F2F0;
+  background-color: #e6f2f0;
   color: var(--primary-color);
   padding: 1rem 10%;
 }
 
-.kv-apply-maintext-wrapper{
+.kv-apply-maintext-wrapper {
   position: relative;
   display: flex;
   align-items: center;
@@ -132,6 +137,7 @@
   border: 2px solid white;
   box-sizing: border-box;
   width: fit-content;
+  text-align: center;
 }
 
 /* 吹き出しのしっぽ：本体の背景色用 */
@@ -152,7 +158,7 @@
 #keyvisual .speech-bubble::after {
   content: "";
   position: absolute;
-  bottom: calc(-2rem + 4px) ;
+  bottom: calc(-2rem + 4px);
   left: calc(50% - 0.25rem);
   transform: translateX(-50%);
   border-width: 0.9rem;
@@ -165,20 +171,18 @@
 #keyvisual .kv-apply-subtext {
   font-size: 1.2rem;
   font-weight: bolder;
+  text-align: center;
 }
 
 #keyvisual .kv-apply-maintext {
   font-size: 3rem;
   font-weight: bolder;
-}
-
-#keyvisual .kv-apply-maintext {
-  font-size: 3rem;
-  font-weight: bolder;
+  text-align: center;
 }
 
 #keyvisual .kv-apply-button {
   font-size: 1.5rem;
+  text-align: center;
   position: relative;
   top: 0;
   background-color: var(--secondary-color);
@@ -217,24 +221,24 @@ ul {
   list-style: none;
 }
 
-.recommendation{
+.recommendation {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.konnakata{
+.konnakata {
   width: 500px;
   margin-bottom: 50px;
 }
 
-.rec{
+.rec {
   display: flex;
   justify-content: space-between;
   width: 75%;
 }
 
-.recphoto{
+.recphoto {
   text-align: center;
 }
 
@@ -302,7 +306,7 @@ ul {
   }
 }
 
-.title{
+.title {
   text-align: center;
 }
 
@@ -329,66 +333,66 @@ ul {
   margin-bottom: 40px;
 }
 
-.fimg{
+.fimg {
   width: 70%;
 }
 
-#voice{
+#voice {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
-.vtitle{
+.vtitle {
   text-align: center;
 }
 
-.voice-container{
+.voice-container {
   display: flex;
   flex-direction: column;
   width: 75%;
 }
 
-.voice-container1{
+.voice-container1 {
   display: flex;
   justify-content: space-between;
   margin-top: 50px;
 }
 
-.voice-container2{
+.voice-container2 {
   display: flex;
   justify-content: space-between;
   margin-top: 30px;
 }
 
-.profile{
+.profile {
   width: 50%;
 }
 
-.table2 p{
+.table2 p {
   line-height: 50px;
   border-bottom: 2px solid #000;
   font-weight: bold;
   margin: 0;
 }
 
-.table2 p:last-child{
+.table2 p:last-child {
   border-bottom: none;
 }
 
-.name{
+.name {
   padding-left: 114px;
   color: #000;
   font-weight: normal;
 }
 
-.grade{
+.grade {
   padding-left: 65px;
   color: #000;
   font-weight: normal;
 }
 
-.intern{
+.intern {
   padding-left: 50px;
   font-weight: normal;
 }
@@ -399,7 +403,7 @@ ul {
   background-color: var(--tertiary-color);
 }
 
-#company{
+#company {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -407,18 +411,18 @@ ul {
   color: #fff;
 }
 
-.ctitle{
+.ctitle {
   text-align: center;
 }
 
-.cphoto{
+.cphoto {
   width: 75%;
   display: flex;
   justify-content: space-between;
   margin-top: 20px;
 }
 
-.cimg p{
+.cimg p {
   text-align: center;
 }
 
@@ -487,7 +491,6 @@ ul {
   font-size: 12px;
 }
 
-
 /* タブレット (960px以下) */
 @media screen and (max-width: 960px) {
   /* NOTE: 今回はタブレットは無視する */
@@ -495,5 +498,46 @@ ul {
 
 /* スマホ (520px以下) */
 @media screen and (max-width: 520px) {
+  #keyvisual .kv-wrapper .circle {
+    top: 2vw;
+    right: 2vw;
+    width: 3.5rem;
+    height: 3.5rem;
+  }
 
+  #keyvisual .kv-wrapper .circle .circle-text {
+    font-size: 0.875rem; /* 14px */
+  }
+
+  #keyvisual .catch-phrase {
+    font-size: 1rem;
+  }
+
+  #keyvisual .speech-bubble {
+    top: -2rem;
+    width: fit-content;
+    margin: 0 1rem;
+    font-size: 1.125rem; /* 18px */
+  }
+
+  #keyvisual .kv-apply-subtext {
+    font-size: 1.125rem; /* 18px */
+  }
+
+  #keyvisual .kv-apply-maintext {
+    font-size: 2rem;
+  }
+
+  #keyvisual .kv-apply-button {
+    font-size: 1.125rem; /* 18px */
+  }
+  #keyvisual .project-title-wrapper {
+    top: auto;
+  }
+
+  #keyvisual .kv-main-area {
+    height: 100%;
+    justify-content: center;
+    display: flex;
+  }
 }
