@@ -213,7 +213,7 @@
   margin: 0 auto;
 }
 
-h3 {
+h1, h3 {
   color: var(--tertiary-color);
 }
 
@@ -227,8 +227,8 @@ ul {
   align-items: center;
 }
 
-.konnakata {
-  width: 500px;
+.konnakata{
+  width: 30%;
   margin-bottom: 50px;
 }
 
@@ -247,6 +247,13 @@ ul {
   position: relative;
 }
 
+.jtitle{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+}
+
 #box1 {
   position: absolute;
   top: 150px;
@@ -260,8 +267,8 @@ ul {
   position: absolute;
   top: 680px;
   right: 100px;
-  width: 10vh;
-  height: 10vh;
+  width: 7vh;
+  height: 7vh;
   background: var(--tertiary-color);
 }
 
@@ -278,9 +285,27 @@ ul {
   position: absolute;
   top: 1650px;
   right: 60px;
-  width: 10vh;
-  height: 10vh;
+  width: 7vh;
+  height: 7vh;
   background: var(--tertiary-color);
+}
+
+#box5 {
+  position: absolute;
+  top: 210px;
+  left: 160px;
+  width: 5vh;
+  height: 5vh;
+  background: var(--secondary-color);
+}
+
+#box6 {
+  position: absolute;
+  top: 1690px;
+  right: 40px;
+  width: 4vh;
+  height: 4vh;
+  background: var(--secondary-color);
 }
 
 .fluid {
@@ -306,27 +331,41 @@ ul {
   }
 }
 
-.title {
-  text-align: center;
+.detail1 {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
 }
-
-.detail {
+.detail2 {
   display: flex;
   justify-content: space-between;
   margin-bottom: 30px;
 }
 
-.detail div {
-  padding: 20px;
+.detail1 div {
+  padding-top: 20px;
+  padding-left: 20px;
 }
 
-.detail img {
+.detail2 div {
+  padding-top: 20px;
+  padding-right: 20px;
+}
+
+.detail1 img, .detail2 img {
   width: 50%;
 }
 
+.detail1 span, .detail2 span{
+  display: inline-block;
+}
+
 .flow {
-  text-align: center;
-  margin: 100px 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .flow img {
@@ -380,20 +419,25 @@ ul {
   border-bottom: none;
 }
 
-.name {
-  padding-left: 114px;
+
+.table2 span{
+  float: right;
+}
+
+.name{
+  padding-right: 50%;
   color: #000;
   font-weight: normal;
 }
 
-.grade {
-  padding-left: 65px;
+.grade{
+  padding-right: 50%;
   color: #000;
   font-weight: normal;
 }
 
-.intern {
-  padding-left: 50px;
+.intern{
+  padding-right: 50%;
   font-weight: normal;
 }
 
@@ -426,8 +470,12 @@ ul {
   text-align: center;
 }
 
-.title {
-  margin-bottom: 30px;
+.btitle {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 50px;
+  margin-top: 50px;
 }
 
 .table th {
