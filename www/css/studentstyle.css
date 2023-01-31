@@ -513,6 +513,12 @@ ul {
     font-size: 1rem;
   }
 
+  #keyvisual .catch-phrase-index {
+    padding: 0.1rem 0.2rem;
+    font-size: 1rem;
+    font-weight: bolder;
+  }
+
   #keyvisual .speech-bubble {
     top: -2rem;
     width: fit-content;
