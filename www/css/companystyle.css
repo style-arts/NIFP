@@ -400,6 +400,7 @@ ul {
 .table td {
   background-color: rgb(231, 229, 229);
   padding-left: 20px;
+  padding-right: 20px;
 }
 
 .table p {
@@ -407,7 +408,11 @@ ul {
   margin: 0;
 }
 
-.table span {
+.join-students{
+  width: 45%;
+}
+
+.red {
   color: var(--secondary-color);
 }
 
@@ -415,7 +420,7 @@ ul {
   padding-left: 0;
 }
 
-.sj span {
+.mark {
   color: var(--primary-color);
 }
 
@@ -504,4 +509,88 @@ ul {
     height: 100%;
     justify-content: center;
   }
+
+  .nw{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nw div{
+    padding: 0;
+    margin: 30px 0 0 0;
+  }
+
+  .ifp{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .ifp div{
+    padding: 0;
+    margin: 30px 0 0 0;
+  }
+
+  .contents{
+    width: 80%;
+  }
+
+  .title h3{
+    width: 80%;
+    letter-spacing: normal;
+    text-align: center;
+  }
+
+  .title h3 span{
+    display: inline-block;
+  }
+  
+  .detail1{
+    flex-direction: column;
+  }
+
+  .detail1 img, .detail2 img{
+    width: 100%;
+  }
+
+  .detail1 div, .detail2 div{
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+
+  .detail1 h1, .detail2 h1{
+    margin: 0 0 10px 0;
+  }
+
+  .detail2{
+    flex-direction: column-reverse;
+  }
+
+  .fluid{
+    display: none;
+  }
+
+  /* .table tr{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .table td{
+    height: 5rem;
+  } */
+
+  .table td{
+    font-size: 14px;
+   /*white-space: nowrap; */
+  }
+
+  .table th{
+    font-size: 18px;
+  }
+
+  .join-students{
+    width: 100%;
+  }
+
+
+
 }
