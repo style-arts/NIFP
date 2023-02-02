@@ -182,7 +182,7 @@
 }
 
 .contents {
-  max-width: 750px;
+  width: 55%;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
@@ -256,8 +256,8 @@ ul {
 
 #box1 {
   position: absolute;
-  top: 150px;
-  left: 100px;
+  top: 8%;
+  left: 7%;
   width: 10vh;
   height: 10vh;
   background: var(--primary-color);
@@ -265,8 +265,8 @@ ul {
 
 #box2 {
   position: absolute;
-  top: 680px;
-  right: 100px;
+  top: 35%;
+  right: 8%;
   width: 7vh;
   height: 7vh;
   background: var(--primary-color);
@@ -274,8 +274,8 @@ ul {
 
 #box3 {
   position: absolute;
-  top: 1050px;
-  left: 100px;
+  top: 53%;
+  left: 7%;
   width: 10vh;
   height: 10vh;
   background: var(--secondary-color);
@@ -283,8 +283,8 @@ ul {
 
 #box4 {
   position: absolute;
-  top: 1650px;
-  right: 100px;
+  top: 70%;
+  right: 8%;
   width: 7vh;
   height: 7vh;
   background: var(--primary-color);
@@ -292,8 +292,8 @@ ul {
 
 #box5 {
   position: absolute;
-  top: 210px;
-  left: 160px;
+  top: 11%;
+  left: 13%;
   width: 5vh;
   height: 5vh;
   background: var(--secondary-color);
@@ -301,8 +301,8 @@ ul {
 
 #box6 {
   position: absolute;
-  top: 1690px;
-  right: 90px;
+  top: 71.5%;
+  right: 7%;
   width: 4vh;
   height: 4vh;
   background: var(--secondary-color);
@@ -368,6 +368,10 @@ ul {
   width: 50%;
 }
 
+.kenshu{
+  object-fit: cover;
+}
+
 .flow {
   display: flex;
   flex-direction: column;
@@ -377,6 +381,7 @@ ul {
 
 .flow img {
   margin-bottom: 40px;
+  width: 70%;
 }
 
 .btitle{
@@ -569,6 +574,10 @@ ul {
     display: none;
   }
 
+  .flow img{
+    width: 100%;
+  }
+
   /* .table tr{
     display: flex;
     flex-direction: column;
@@ -590,7 +599,17 @@ ul {
   .join-students{
     width: 100%;
   }
+}
 
+@media screen and (max-width: 400px) {
 
+  .table td {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
 
+  .table th{
+    padding: 20px 10px;
+  }
+  
 }
