@@ -398,6 +398,10 @@ ul {
   margin-top: 50px;
 }
 
+.voice-container1 img, .voice-container2 img{
+  width: 42%;
+}
+
 .voice-container2 {
   display: flex;
   justify-content: space-between;
@@ -413,31 +417,30 @@ ul {
   border-bottom: 2px solid #000;
   font-weight: bold;
   margin: 0;
+  position: relative;
 }
 
 .table2 p:last-child {
   border-bottom: none;
 }
 
-
-.table2 span{
-  float: right;
-}
-
 .name{
-  padding-right: 50%;
+  position: absolute;
+  left: 40%;
   color: #000;
   font-weight: normal;
 }
 
 .grade{
-  padding-right: 50%;
+  position: absolute;
+  left: 40%;
   color: #000;
   font-weight: normal;
 }
 
 .intern{
-  padding-right: 50%;
+  position: absolute;
+  left: 40%;
   font-weight: normal;
 }
 
@@ -497,10 +500,6 @@ ul {
 .table p {
   padding: 0;
   margin: 0;
-}
-
-.table span {
-  color: var(--secondary-color);
 }
 
 .sj ul {
@@ -594,4 +593,81 @@ ul {
     justify-content: center;
     display: flex;
   }
+
+  .contents{
+    width: 80%;
+  }
+
+  .recommendation{
+    height: 50vh;
+  }
+
+  .konnakata{
+    width: 70%;
+  }
+  .rec{
+    height: 70%;
+    flex-wrap: wrap;
+  }
+
+  .recphoto{
+    width: 40%;
+    font-size: 14px;
+  }
+
+  .detail1{
+    flex-direction: column;
+  }
+
+  .detail1 img, .detail2 img{
+    width: 100%;
+  }
+
+  .detail1 div, .detail2 div{
+    padding: 0;
+    margin: 20px 0 0 0;
+  }
+
+  .detail1 h1, .detail2 h1{
+    margin: 0 0 10px 0;
+  }
+
+  .detail2{
+    flex-direction: column-reverse;
+  }
+
+  .fluid{
+    display: none;
+  }
+
+  .voice-container1{
+    flex-direction: column;
+  }
+
+  .voice-container2{
+    flex-direction: column-reverse;
+  }
+
+  .voice-container img{
+    width: 100%;
+  }
+
+  .profile{
+    width: 100%;
+  }
+
+  .cphoto{
+    flex-wrap: wrap;
+    height: 60vh;
+  }
+
+  .cimg{
+    width: 40%;
+  }
+
+  #company{
+    height: 80vh;
+  }
+
+
 }
