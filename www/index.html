@@ -10,31 +10,43 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/indexstyle.css" />
     <!-- <script src="js/main.js"></script> -->
   </head>
 
   <body>
-    <!----- header----->
-    <!-- <header>ヘッダー</header>
-    <nav>ナビ</nav> -->
-    <!----- /header ----->
-
-    <!----- main ----->
-    <article>
-      <a href="company.html">企業用ページ</a>
-      <a href="student.html">学生用ページ</a>
-      <h1 class="title">This is Index page</h1>
-      <section>
-        <h2>見出し２</h2>
-        <p>コンテンツの内容</p>
-        <h1><a href="company.html">企業用ページへ</a></h1>
-        <h1><a href="student.html">企業用ページへ</a></h1>
-      </section>
-    </article>
-    <!----- /main ----->
-
-    <!----- footer ----->
-    <footer>フッター</footer>
-    <!----- /footer ----->
+    <section>
+      <div id="keyvisual">
+        <img src="img/logo.svg" alt="長岡市のエンブレム" class="city-emblem" />
+        <div class="kv-wrapper">
+          
+          <div class="kv-background">
+            <div class="kv-main-area">
+              <div class="project-title-wrapper">
+                <div class="catch-phrase">
+                  <span class="catch-phrase-index">地方のチカラを、</span>
+                  <span>企業のチカラに。</span>
+                </div>
+                <img
+                  src="img/kv_main.png"
+                  alt="Nagaoka Intern Flame Project"
+                  class="project-title-img"
+                />
+              </div>
+              <img
+                src="img/kv.png"
+                alt="企業と学生が握手するイラスト"
+                class="kv-illustration"
+              />
+            </div>            
+          </div>
+        </div>
+        <div class="kv-buttonarea">
+          <button class="firm-button" onclick="window.open('company.html')">企業の方はこちら</button>
+          <button class="student-button" onclick="window.open('student.html')">学生の方はこちら</button>
+        </div>
+      </div>
+    </section>
+      
   </body>
 </html>
