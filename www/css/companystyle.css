@@ -229,6 +229,10 @@ ul {
   box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
 }
 
+.nw img, .ifp img{
+  object-fit: contain;
+}
+
 .ifp {
   display: flex;
 }
@@ -368,8 +372,8 @@ ul {
   width: 50%;
 }
 
-.kenshu{
-  object-fit: cover;
+.dphoto{
+  object-fit: contain;
 }
 
 .flow {
@@ -413,9 +417,9 @@ ul {
   margin: 0;
 }
 
-.join-students{
+/* .join-students{
   width: 45%;
-}
+} */
 
 .red {
   color: var(--secondary-color);
