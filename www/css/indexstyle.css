@@ -1,149 +1,118 @@
-  @charset "utf-8";
-  
-  #keyvisual{
-    background: linear-gradient(
-      90deg,
-      #fefde2 0%,
-      #fefde2 50%,
-      #e5f0ee 50%,
-      #e5f0ee 100%
-    );
-    position: relative;
-    width: 100%;
-    height: 100vh;
-  }
-  
-  .kv-main-area {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
-  .city-emblem {
-    position: absolute;
-    top: 0;
-    left: 0;
-    margin: 1rem;
-    max-width: 130px;
-  }
-  
-  .kv-wrapper {
-    align-items: center;
-    display: flex;
-    justify-content: center;
-    position: relative;
-  }
-  
-  .project-title-wrapper {
-    position: absolute;
-    top: 8rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+@charset "utf-8";
+
+body {
+  background: linear-gradient(
+    90deg,
+    #fefde2 0%,
+    #fefde2 50%,
+    #e5f0ee 50%,
+    #e5f0ee 100%
+  );
+}
+
+#keyvisual {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  justify-content: space-evenly;
+}
+
+.city-emblem {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 1rem;
+  max-width: 130px;
+}
+
+.project-title-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.kv-illustration {
+  width: 40%;
+}
+
+.catch-phrase {
+  color: var(--primary-color);
+  font-size: 4vw;
+  font-weight: bolder;
+  border-bottom: 3px solid var(--primary-color);
+}
+
+.project-title-img {
+  width: 40%;
+  padding: 1rem;
+}
+
+.kv-buttonarea {
+  align-items: center;
+  display: flex;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+#button {
+  letter-spacing: 2px;
+  font-size: 1.7vw;
+  width: 40%;
+  height: 7vh;
+  color: #fff;
+  padding: 10px 40px;
+  border-radius: 40px;
+  border: none;
+}
+
+.firm-button {
+  background-color: var(--primary-color);
+}
+
+.student-button {
+  background-color: var(--tertiary-color);
+}
+
+.kv-buttonarea button:hover {
+  position: relative;
+  top: -3px;
+  box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
+}
+
+@media screen and (max-width: 520px) {
+  #keyvisual {
+    justify-content: space-evenly;
   }
 
-  .kv-illustration {
-    position: absolute;
-    top: 18rem;
-    width: 70%;
-    max-width: 600px;
-  }
-  
   .catch-phrase {
     color: var(--primary-color);
-    font-size: 4rem;
+    font-size: 7vw;
     font-weight: bolder;
     border-bottom: 3px solid var(--primary-color);
   }
 
   .project-title-img {
     width: 50%;
-    padding: 1rem;
+    padding: 0.5rem;
   }
 
-  .kv-buttonarea{
-    position: absolute;
-    top: 60rem;
-    align-items: center;
+  .kv-illustration {
+    width: 70%;
+  }
+
+  .kv-buttonarea {
     display: flex;
+    flex-direction: column;
     justify-content: space-evenly;
+    height: 20vh;
   }
 
-  .firm-button{
-    letter-spacing: 2px;
-    font-size: 25px;
-    width: 40%;
-    height: 7vh;
-    color: #fff;
-    background-color: var(--primary-color);
+  #button{
+    font-size: 4vw;
+    width: 80vw;
     padding: 10px 40px;
-    border-radius: 40px;
-    border: none;
-  }
- 
-  .student-button{
-    letter-spacing: 2px;
-    font-size: 25px;
-    width: 40%;
-    height: 7vh;
-    color: #fff;
-    background-color: var(--tertiary-color);
-    padding: 10px 40px;
-    border-radius: 40px;
-    border: none;
   }
 
-  .kv-buttonarea button:hover {
-    top: -3px;
-    box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
-  }
-
-  @media screen and (max-width: 520px) {
-    
-    .catch-phrase {
-        color: var(--primary-color);
-        font-size: 1.45rem;
-        font-weight: bolder;
-        border-bottom: 3px solid var(--primary-color);
-    }
-
-    .project-title-img {
-        width: 50%;
-        padding: 0.5rem;
-    }
-
-    .kv-buttonarea{
-        position: relative;
-        top: 40rem;
-        display: flex;
-        justify-content: space-evenly;
-      }
-    
-    .firm-button{
-        letter-spacing: 2px;
-        font-size: 10px;
-        width: 40%;
-        height: 5vh;
-        color: #fff;
-        background-color: var(--primary-color);
-        padding: 10px 40px;
-        border-radius: 40px;
-        border: none;
-      }
-     
-      .student-button{
-        letter-spacing: 2px;
-        font-size: 10px;
-        width: 40%;
-        height: 5vh;
-        color: #fff;
-        background-color: var(--tertiary-color);
-        padding: 10px 40px;
-        border-radius: 40px;
-        border: none;
-      }
-    
-
-  }
-  
- 
+}

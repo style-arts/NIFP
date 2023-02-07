@@ -199,10 +199,11 @@ ul {
 .nw {
   display: flex;
   margin-bottom: 70px;
+  justify-content: space-evenly;
 }
 
 .nw div {
-  padding-left: 50px;
+  width: 50%;
 }
 
 .nw h2{
@@ -235,10 +236,11 @@ ul {
 
 .ifp {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .ifp div {
-  padding-right: 50px;
+  width: 50%;
 }
 
 .ifp h2{
@@ -296,8 +298,8 @@ ul {
 
 #box5 {
   position: absolute;
-  top: 11%;
-  left: 13%;
+  top: 70%;
+  left: 70%;
   width: 5vh;
   height: 5vh;
   background: var(--secondary-color);
@@ -305,8 +307,8 @@ ul {
 
 #box6 {
   position: absolute;
-  top: 71.5%;
-  right: 7%;
+  top: 60%;
+  right: -15%;
   width: 4vh;
   height: 4vh;
   background: var(--secondary-color);
@@ -359,21 +361,20 @@ ul {
 }
 
 .detail1 div {
+  width: 50%;
   padding-top: 20px;
   margin-left: 20px;
 }
 
 .detail2 div {
+  width: 50%;
   padding-top: 20px;
   margin-right: 20px;
 }
 
-.detail1 img, .detail2 img {
-  width: 50%;
-}
-
 .dphoto{
   object-fit: contain;
+  width: 50%;
 }
 
 .flow {
@@ -383,9 +384,13 @@ ul {
   margin-top: 50px;
 }
 
-.flow img {
-  margin-bottom: 40px;
-  width: 70%;
+.ftitle{
+  width: 30%;
+  margin-bottom: 50px;
+}
+
+.flow-img {
+  width: 60%;
 }
 
 .btitle{
@@ -527,6 +532,7 @@ ul {
   .nw div{
     padding: 0;
     margin: 30px 0 0 0;
+    width: 100%;
   }
 
   .ifp{
@@ -537,6 +543,7 @@ ul {
   .ifp div{
     padding: 0;
     margin: 30px 0 0 0;
+    width: 100%;
   }
 
   .contents{
@@ -564,6 +571,7 @@ ul {
   .detail1 div, .detail2 div{
     padding: 0;
     margin: 20px 0 0 0;
+    width: 100%;
   }
 
   .detail1 h1, .detail2 h1{
