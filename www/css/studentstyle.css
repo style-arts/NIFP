@@ -281,7 +281,6 @@ ul {
 }
 
 .konnakata{
-  width: 30%;
   margin-bottom: 50px;
 }
 
@@ -292,8 +291,11 @@ ul {
 }
 
 .recphoto {
-  text-align: center;
+  display: flex;
+  flex-direction: column;
   width: 20%;
+  text-align: center;
+  justify-content: space-between;
 }
 
 #join {
@@ -346,8 +348,8 @@ ul {
 
 #box5 {
   position: absolute;
-  top: 11%;
-  left: 13%;
+  top: 70%;
+  left: 70%;
   width: 5vh;
   height: 5vh;
   background: var(--secondary-color);
@@ -355,8 +357,8 @@ ul {
 
 #box6 {
   position: absolute;
-  top: 71.5%;
-  right: 7%;
+  top: 60%;
+  right: -15%;
   width: 4vh;
   height: 4vh;
   background: var(--secondary-color);
@@ -534,6 +536,8 @@ ul {
 
 .cimg{
   width: 15%;
+  display: flex;
+  flex-direction: column;
 }
 
 .cimg p {

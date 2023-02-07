@@ -296,8 +296,8 @@ ul {
 
 #box5 {
   position: absolute;
-  top: 11%;
-  left: 13%;
+  top: 70%;
+  left: 70%;
   width: 5vh;
   height: 5vh;
   background: var(--secondary-color);
@@ -305,8 +305,8 @@ ul {
 
 #box6 {
   position: absolute;
-  top: 71.5%;
-  right: 7%;
+  top: 60%;
+  right: -15%;
   width: 4vh;
   height: 4vh;
   background: var(--secondary-color);
@@ -383,8 +383,12 @@ ul {
   margin-top: 50px;
 }
 
-.flow img {
-  margin-bottom: 40px;
+.ftitle{
+  width: 50%;
+  margin-bottom: 50px;
+}
+
+.flow-img {
   width: 70%;
 }
 
