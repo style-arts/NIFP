@@ -199,10 +199,11 @@ ul {
 .nw {
   display: flex;
   margin-bottom: 70px;
+  justify-content: space-evenly;
 }
 
 .nw div {
-  padding-left: 50px;
+  width: 50%;
 }
 
 .nw h2{
@@ -235,10 +236,11 @@ ul {
 
 .ifp {
   display: flex;
+  justify-content: space-evenly;
 }
 
 .ifp div {
-  padding-right: 50px;
+  width: 50%;
 }
 
 .ifp h2{
@@ -359,21 +361,20 @@ ul {
 }
 
 .detail1 div {
+  width: 50%;
   padding-top: 20px;
   margin-left: 20px;
 }
 
 .detail2 div {
+  width: 50%;
   padding-top: 20px;
   margin-right: 20px;
 }
 
-.detail1 img, .detail2 img {
-  width: 50%;
-}
-
 .dphoto{
   object-fit: contain;
+  width: 50%;
 }
 
 .flow {
@@ -384,12 +385,12 @@ ul {
 }
 
 .ftitle{
-  width: 50%;
+  width: 30%;
   margin-bottom: 50px;
 }
 
 .flow-img {
-  width: 70%;
+  width: 60%;
 }
 
 .btitle{
@@ -531,6 +532,7 @@ ul {
   .nw div{
     padding: 0;
     margin: 30px 0 0 0;
+    width: 100%;
   }
 
   .ifp{
@@ -541,6 +543,7 @@ ul {
   .ifp div{
     padding: 0;
     margin: 30px 0 0 0;
+    width: 100%;
   }
 
   .contents{
@@ -568,6 +571,7 @@ ul {
   .detail1 div, .detail2 div{
     padding: 0;
     margin: 20px 0 0 0;
+    width: 100%;
   }
 
   .detail1 h1, .detail2 h1{

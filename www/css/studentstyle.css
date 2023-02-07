@@ -221,13 +221,14 @@ ul {
   list-style: none;
 }
 
-.nw {
+.nw{
   display: flex;
   margin-bottom: 70px;
+  justify-content: space-evenly;
 }
 
-.nw div {
-  padding-left: 50px;
+.nw div, .ifp div{
+  width: 50%;
 }
 
 .nw h2{
@@ -260,10 +261,7 @@ ul {
 
 .ifp {
   display: flex;
-}
-
-.ifp div {
-  padding-right: 50px;
+  justify-content: space-evenly;
 }
 
 .ifp h2{

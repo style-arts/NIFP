@@ -56,28 +56,23 @@ body {
   width: 100vw;
 }
 
-.firm-button {
+#button {
   letter-spacing: 2px;
   font-size: 1.7vw;
   width: 40%;
   height: 7vh;
   color: #fff;
-  background-color: var(--primary-color);
   padding: 10px 40px;
   border-radius: 40px;
   border: none;
 }
 
+.firm-button {
+  background-color: var(--primary-color);
+}
+
 .student-button {
-  letter-spacing: 2px;
-  font-size: 1.6vw;
-  width: 40%;
-  height: 7vh;
-  color: #fff;
   background-color: var(--tertiary-color);
-  padding: 10px 40px;
-  border-radius: 40px;
-  border: none;
 }
 
 .kv-buttonarea button:hover {
@@ -114,15 +109,10 @@ body {
     height: 20vh;
   }
 
-  .firm-button {
+  #button{
     font-size: 4vw;
     width: 80vw;
     padding: 10px 40px;
   }
 
-  .student-button {
-    font-size: 4vw;
-    width: 80vw;
-    padding: 10px 40px;
-  }
 }
