@@ -396,14 +396,17 @@ ul {
   margin-bottom: 30px;
 }
 
-.detail1 div {
+.detail1 div{
   padding-top: 20px;
   padding-left: 20px;
+  padding-right: 20px;
+  width: 50%;
 }
 
 .detail2 div {
   padding-top: 20px;
   padding-right: 20px;
+  width: 50%;
 }
 
 .detail1 img, .detail2 img {
@@ -419,14 +422,30 @@ ul {
   align-items: center;
   flex-direction: column;
   margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.flow div{
+  width: 80%;
+  margin-bottom: 50px;
 }
 
 .ftitle{
   font-style: italic;
   color: var(--tertiary-color);
-  font-weight: bold;
-  margin-bottom: 50px;
-  font-size: 4vw;
+  /* font-weight: bold; */
+  font-size: 300%;
+  text-align: center;
+  text-shadow: 
+    1.5px 1.5px 0, 
+    1.5px -1.5px 0px,
+    -1.5px 1.5px 0,
+    -1.5px -1.5px 0px,
+    1.5px 0px 0px,
+    0px 1.5px 0px,
+    -1.5px 0px 0px,
+    0px -1.5px 0px; 
+  letter-spacing: 3px;
 }
 
 .flow img {
@@ -727,6 +746,7 @@ ul {
   .detail1 div, .detail2 div{
     padding: 0;
     margin: 20px 0 0 0;
+    width: 100%;
   }
 
   .detail1 h1, .detail2 h1{
@@ -739,6 +759,10 @@ ul {
 
   .fluid{
     display: none;
+  }
+
+  .flow{
+    margin-bottom: 50px;
   }
 
   .ftitle{

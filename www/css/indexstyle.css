@@ -88,9 +88,10 @@ body {
 
   .catch-phrase {
     color: var(--primary-color);
-    font-size: 7vw;
+    font-size: 6vw;
     font-weight: bolder;
     border-bottom: 3px solid var(--primary-color);
+    text-align: center;
   }
 
   .project-title-img {
