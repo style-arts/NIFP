@@ -1,6 +1,6 @@
-'Type: Feature': ['feature/*', 'feat/*']
-'Type: Bug': fix/*
-'Type: Maintenance': ['patch/*', 'chore/*']
-'Type: Release': release/*
-'Type: Refactoring': ['refactor/*', 'refactoring/*']
-'Type: Documentation': ['docs/*', 'doc/*']
+'Feature': ['feature/*', 'feat/*']
+'Bug': fix/*
+'Maintenance': ['patch/*', 'chore/*']
+'Release': release/*
+' Refactoring': ['refactor/*', 'refactoring/*']
+'Documentation': ['docs/*', 'doc/*']
