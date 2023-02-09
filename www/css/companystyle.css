@@ -617,6 +617,16 @@ ul {
   .ftitle{
     font-size: 9vw;
     width: 100%;
+    text-shadow: 
+     1px 1px 0, 
+     1px -1px 0px,
+    -1px 1px 0,
+    -1px -1px 0px,
+    1px 0px 0px,
+    0px 1px 0px,
+    -1px 0px 0px,
+    0px -1px 0px; 
+  letter-spacing: 3px;
   }
 
   .flow img{
