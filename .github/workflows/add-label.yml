@@ -7,15 +7,12 @@ on:
       - opened
       - reopened
 jobs:
-  Add-Labels:
+  addLabelsByBranch:
+    name: PR Labeler
     runs-on: ubuntu-latest
-    env:
-        Greeting: Hello
+    timeout-minutes: 3
     steps:
-    - uses: actions/labeler@v4
-      with:
-        repo-token: "${{ secrets.GITHUB_TOKEN }}"
-        configuration-path: ".github/labeler.yml"
+      - uses: technote-space/pr-labeler-action@v4
 
 
       # - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
