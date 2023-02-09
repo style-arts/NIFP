@@ -382,16 +382,31 @@ ul {
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
+  margin-bottom: 100px;
+}
+
+.flow div{
+  width: 80%;
+  margin-bottom: 50px;
 }
 
 .ftitle{
-  font-size: 4vw;
+  font-size: 300%;
   font-style: italic;
   text-align: center;
   color: var(--primary-color);
-  font-weight: bold;
-  width: 80%;
-  margin-bottom: 50px;
+  /* font-weight: bold; */
+
+  text-shadow: 
+     1.5px 1.5px 0, 
+     1.5px -1.5px 0px,
+    -1.5px 1.5px 0,
+    -1.5px -1.5px 0px,
+    1.5px 0px 0px,
+    0px 1.5px 0px,
+    -1.5px 0px 0px,
+    0px -1.5px 0px; 
+  letter-spacing: 3px;
 }
 
 .flow-img {
@@ -593,6 +608,10 @@ ul {
 
   .fluid{
     display: none;
+  }
+
+  .flow{
+    margin-bottom: 50px;
   }
 
   .ftitle{
