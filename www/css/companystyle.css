@@ -385,7 +385,12 @@ ul {
 }
 
 .ftitle{
-  width: 30%;
+  font-size: 4vw;
+  font-style: italic;
+  text-align: center;
+  color: var(--primary-color);
+  font-weight: bold;
+  width: 80%;
   margin-bottom: 50px;
 }
 
@@ -550,6 +555,10 @@ ul {
     width: 80%;
   }
 
+  .title img{
+    width: 75%;
+  }
+
   .title h3{
     width: 80%;
     letter-spacing: normal;
@@ -586,8 +595,13 @@ ul {
     display: none;
   }
 
-  .flow img{
+  .ftitle{
+    font-size: 9vw;
     width: 100%;
+  }
+
+  .flow img{
+    width: 80%;
   }
 
   /* .table tr{
@@ -598,6 +612,14 @@ ul {
   .table td{
     height: 5rem;
   } */
+
+  .btitle{
+    margin-bottom: 20px;
+  }
+
+  .btitle img{
+    width: 50%;
+  }
 
   .table td{
     font-size: 14px;

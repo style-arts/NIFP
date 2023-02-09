@@ -422,6 +422,14 @@ ul {
   margin-top: 50px;
 }
 
+.ftitle{
+  font-style: italic;
+  color: var(--tertiary-color);
+  font-weight: bold;
+  margin-bottom: 50px;
+  font-size: 4vw;
+}
+
 .flow img {
   margin-bottom: 40px;
 }
@@ -437,7 +445,8 @@ ul {
 }
 
 .vtitle {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .voice-container {
@@ -522,7 +531,8 @@ ul {
 }
 
 .ctitle {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .cphoto {
@@ -673,19 +683,15 @@ ul {
     align-items: center;
   }
 
-  .nw div{
+  .nw div, .ifp div{
     padding: 0;
     margin: 30px 0 0 0;
+    width: 100%;
   }
 
   .ifp{
     flex-direction: column-reverse;
     align-items: center;
-  }
-
-  .ifp div{
-    padding: 0;
-    margin: 30px 0 0 0;
   }
 /* 
   .recommendation{
@@ -705,6 +711,10 @@ ul {
     width: 48%;
     font-size: 14px;
     margin-bottom: 20px;
+  }
+
+  .jtitle img{
+    width: 50%;
   }
 
   .detail1{
@@ -732,8 +742,22 @@ ul {
     display: none;
   }
 
-  .flow img{
+  .ftitle{
+    font-size: 9vw;
     width: 100%;
+    text-align: center;
+  }
+
+  .flow img{
+    width: 80%;
+  }
+
+  .vtitle{
+    width: 100%;
+  }
+
+  .vtitle img{
+    width: 60%;
   }
 
   .voice-container1{
@@ -752,6 +776,14 @@ ul {
     width: 100%;
   }
 
+  .ctitle{
+    width: 100%;
+  }
+
+  .ctitle img{
+    width: 50%;
+  }
+
   .cphoto{
     flex-wrap: wrap;
     height: 60vh;
@@ -764,6 +796,16 @@ ul {
   #company{
     height: 80vh;
   }
+
+  .btitle{
+    margin-top: 0;
+    margin-bottom: 30px;
+  }
+
+  .btitle img{
+    width: 50%;
+  }
+
 }
 
 @media screen and (max-width: 400px) {
