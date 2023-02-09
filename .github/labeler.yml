@@ -1,0 +1,18 @@
+Feature:
+- feature/**/*
+Fix:
+- fix/**/*
+HotFix:
+- hotfix/**/*
+Release:
+- release/**/*
+web:
+- web/**/*
+api:
+- api/**/*
+batch:
+- batch/**/*
+infrastructure:
+- infrastructure/**/*
+cli:
+- cli/**/*
