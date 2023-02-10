@@ -305,7 +305,7 @@ ul {
 }
 
 #join {
-  background: linear-gradient(rgb(250, 250, 191), rgb(236, 236, 253));
+  background: linear-gradient(#fffdd1, #e7f4fa);
   position: relative;
 }
 
