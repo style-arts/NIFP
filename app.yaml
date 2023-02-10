@@ -54,13 +54,13 @@ handlers:
 ###   App Engine の性能を設定する            ###
 #############################################
 
-# # 一番性能が低い 28インスタンス時間
-# instance_class: F1
+# 一番性能が低い 28インスタンス時間
+instance_class: F1
 
-# # 待機するインスタンスは最大１つ 3000ms超えたらインスタンス起動
-# automatic_scaling:
-#   min_idle_instances: automatic
-#   max_idle_instances: 1
-#   min_pending_latency: 3000ms
-#   max_pending_latency: automatic
-#   max_concurrent_requests: 80
+# 待機するインスタンスは最大１つ 3000ms超えたらインスタンス起動
+automatic_scaling:
+  min_idle_instances: automatic
+  max_idle_instances: 1
+  min_pending_latency: 3000ms
+  max_pending_latency: automatic
+  max_concurrent_requests: 80
