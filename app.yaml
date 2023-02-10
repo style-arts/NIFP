@@ -11,22 +11,26 @@ handlers:
 - url: /
   static_files: www/index.html
   upload: www/index.html
-  # secure: always
+  # https のみアクセス可能
+  secure: always
 
 # 3 ページだけなので、限定的に設定する
 - url: /company
   static_files: www/company.html
   upload: www/company.html
-  # secure: always
+  secure: always
 
 - url: /student
   static_files: www/student.html
   upload: www/student.html
-  # secure: always
+  secure: always
 
 - url: /(.*)
   static_files: www/\1
   upload: www/(.*)
+  secure: always
+  # https にリダイレクト
+  redirect_http_response_code: 301
 
 # # 下層フォルダ自体にアクセスされた時、各フォルダの index.html を表示
 # - url: /(.+)/$
