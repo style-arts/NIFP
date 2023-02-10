@@ -500,37 +500,30 @@ ul {
 
 .profile {
   width: 50%;
+  display: flex;
+  flex-direction: column;
 }
 
-.table2 p {
+.table2 .profile-row {
   line-height: 50px;
   border-bottom: 2px solid #000;
-  font-weight: bold;
   margin: 0;
   position: relative;
 }
 
-.table2 p:last-child {
+.table2 .profile-row:last-child {
   border-bottom: none;
 }
 
-.name {
-  position: absolute;
-  left: 40%;
-  color: #000;
-  font-weight: normal;
+.profile-row {
+  display: flex;
+  margin-bottom: 20px;
 }
-
-.grade {
-  position: absolute;
-  left: 40%;
-  color: #000;
-  font-weight: normal;
+.profile-row-key {
+  font-weight: bold;
+  width: 40%;
 }
-
-.intern {
-  position: absolute;
-  left: 40%;
+.profile-row-value {
   font-weight: normal;
 }
 
@@ -842,6 +835,24 @@ ul {
 
   .btitle img {
     width: 50%;
+  }
+
+  .table2 .profile-row {
+    line-height: inherit;
+    padding-bottom: 0.5rem ;
+    margin-bottom: 0.5rem ;
+  }
+
+  .profile-row {
+    flex-direction: column;
+  }
+  .profile-row-key {
+    font-weight: bold;
+    width: auto;
+  }
+  .profile-row-value {
+    font-weight: normal;
+    padding-left: 1rem;
   }
 }
 
