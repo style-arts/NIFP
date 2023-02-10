@@ -439,9 +439,9 @@ ul {
   margin-bottom: 100px;
 }
 
-.flow div {
-  width: 80%;
-  margin-bottom: 50px;
+.flow-image {
+  width: 40%;
+  margin-bottom: 3rem;
 }
 
 .ftitle {
@@ -454,10 +454,6 @@ ul {
     -1.5px -1.5px 0px, 1.5px 0px 0px, 0px 1.5px 0px, -1.5px 0px 0px,
     0px -1.5px 0px;
   letter-spacing: 3px;
-}
-
-.flow img {
-  margin-bottom: 40px;
 }
 
 .fimg {
@@ -776,6 +772,9 @@ ul {
 
   .flow {
     margin-bottom: 50px;
+  }
+  .flow-image {
+    margin-bottom: 1rem;
   }
 
   .ftitle {

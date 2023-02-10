@@ -399,9 +399,9 @@ a {
   margin-bottom: 100px;
 }
 
-.flow div {
-  width: 80%;
-  margin-bottom: 50px;
+.flow-image {
+  width: 40%;
+  margin-bottom: 3rem;
 }
 
 .ftitle {
@@ -623,6 +623,9 @@ a {
 
   .flow {
     margin-bottom: 50px;
+  }
+  .flow-image {
+    margin-bottom: 1rem;
   }
 
   .ftitle {
