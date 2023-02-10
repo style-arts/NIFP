@@ -202,6 +202,9 @@
  * [End] Key Visual
  **/
 
+a {
+  color: inherit;
+}
 .wrapper {
   padding: 50px 0;
 }
@@ -213,7 +216,9 @@
   margin: 0 auto;
 }
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   color: var(--tertiary-color);
 }
 
@@ -221,21 +226,22 @@ ul {
   list-style: none;
 }
 
-.nw{
+.nw {
   display: flex;
   margin-bottom: 70px;
   justify-content: space-evenly;
 }
 
-.nw div, .ifp div{
+.nw div,
+.ifp div {
   width: 50%;
 }
 
-.nw h2{
+.nw h2 {
   margin-bottom: 20px;
 }
 
-.nw p{
+.nw p {
   line-height: 30px;
 }
 
@@ -255,7 +261,8 @@ ul {
   box-shadow: 0 5px 3px rgba(0, 0, 0, 0.3);
 }
 
-.nw img, .ifp img{
+.nw img,
+.ifp img {
   object-fit: contain;
 }
 
@@ -264,11 +271,11 @@ ul {
   justify-content: space-evenly;
 }
 
-.ifp h2{
+.ifp h2 {
   margin-bottom: 20px;
 }
 
-.ifp p{
+.ifp p {
   line-height: 30px;
 }
 
@@ -278,13 +285,14 @@ ul {
   align-items: center;
 }
 
-.konnakata{
+.konnakata {
   margin-bottom: 50px;
 }
 
 .rec {
   display: flex;
   justify-content: space-between;
+  align-items: flex-start;
   width: 75%;
 }
 
@@ -301,7 +309,7 @@ ul {
   position: relative;
 }
 
-.jtitle{
+.jtitle {
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -396,7 +404,7 @@ ul {
   margin-bottom: 30px;
 }
 
-.detail1 div{
+.detail1 div {
   padding-top: 20px;
   padding-left: 20px;
   padding-right: 20px;
@@ -409,12 +417,18 @@ ul {
   width: 50%;
 }
 
-.detail1 img, .detail2 img {
+.detail1 img,
+.detail2 img {
   width: 50%;
 }
 
-.detail1 span, .detail2 span{
+.detail1 span,
+.detail2 span {
   display: inline-block;
+}
+.detail1 h1,
+.detail2 h1 {
+  margin-bottom: 1rem;
 }
 
 .flow {
@@ -425,26 +439,20 @@ ul {
   margin-bottom: 100px;
 }
 
-.flow div{
+.flow div {
   width: 80%;
   margin-bottom: 50px;
 }
 
-.ftitle{
+.ftitle {
   font-style: italic;
   color: var(--tertiary-color);
   /* font-weight: bold; */
   font-size: 300%;
   text-align: center;
-  text-shadow: 
-    1.5px 1.5px 0, 
-    1.5px -1.5px 0px,
-    -1.5px 1.5px 0,
-    -1.5px -1.5px 0px,
-    1.5px 0px 0px,
-    0px 1.5px 0px,
-    -1.5px 0px 0px,
-    0px -1.5px 0px; 
+  text-shadow: 1.5px 1.5px 0, 1.5px -1.5px 0px, -1.5px 1.5px 0,
+    -1.5px -1.5px 0px, 1.5px 0px 0px, 0px 1.5px 0px, -1.5px 0px 0px,
+    0px -1.5px 0px;
   letter-spacing: 3px;
 }
 
@@ -473,7 +481,7 @@ ul {
   width: 75%;
 }
 
-.voice-container img{
+.voice-container img {
   object-fit: contain;
 }
 
@@ -483,7 +491,8 @@ ul {
   margin-top: 50px;
 }
 
-.voice-container1 img, .voice-container2 img{
+.voice-container1 img,
+.voice-container2 img {
   width: 42%;
 }
 
@@ -509,27 +518,27 @@ ul {
   border-bottom: none;
 }
 
-.name{
+.name {
   position: absolute;
   left: 40%;
   color: #000;
   font-weight: normal;
 }
 
-.grade{
+.grade {
   position: absolute;
   left: 40%;
   color: #000;
   font-weight: normal;
 }
 
-.intern{
+.intern {
   position: absolute;
   left: 40%;
   font-weight: normal;
 }
 
-.q{
+.q {
   margin-bottom: 20px;
 }
 
@@ -560,7 +569,7 @@ ul {
   margin-top: 20px;
 }
 
-.cimg{
+.cimg {
   width: 15%;
   display: flex;
   flex-direction: column;
@@ -692,34 +701,35 @@ ul {
     display: flex;
   }
 
-  .contents{
+  .contents {
     width: 80%;
   }
 
-  .nw{
+  .nw {
     flex-direction: column;
     align-items: center;
   }
 
-  .nw div, .ifp div{
+  .nw div,
+  .ifp div {
     padding: 0;
     margin: 30px 0 0 0;
     width: 100%;
   }
 
-  .ifp{
+  .ifp {
     flex-direction: column-reverse;
     align-items: center;
   }
-/* 
+  /* 
   .recommendation{
     height: 50vh;
   } */
 
-  .konnakata{
+  .konnakata {
     width: 70%;
   }
-  .rec{
+  .rec {
     width: 80%;
     /* height: 70%; */
     flex-wrap: wrap;
@@ -731,114 +741,109 @@ ul {
     margin-bottom: 20px;
   }
 
-  .jtitle img{
+  .jtitle img {
     width: 50%;
   }
 
-  .detail1{
+  .detail1 {
     flex-direction: column;
   }
 
-  .detail1 img, .detail2 img{
+  .detail1 img,
+  .detail2 img {
     width: 100%;
   }
 
-  .detail1 div, .detail2 div{
+  .detail1 div,
+  .detail2 div {
     padding: 0;
     margin: 20px 0 0 0;
     width: 100%;
   }
 
-  .detail1 h1, .detail2 h1{
+  .detail1 h1,
+  .detail2 h1 {
     margin: 0 0 10px 0;
   }
 
-  .detail2{
+  .detail2 {
     flex-direction: column-reverse;
   }
 
-  .fluid{
+  .fluid {
     display: none;
   }
 
-  .flow{
+  .flow {
     margin-bottom: 50px;
   }
 
-  .ftitle{
+  .ftitle {
     font-size: 9vw;
     width: 100%;
     text-align: center;
-    text-shadow: 
-       1px 1px 0, 
-       1px -1px 0px,
-      -1px 1px 0,
-      -1px -1px 0px,
-      1px 0px 0px,
-      0px 1px 0px,
-      -1px 0px 0px,
-      0px -1px 0px; 
+    text-shadow: 1px 1px 0, 1px -1px 0px, -1px 1px 0, -1px -1px 0px, 1px 0px 0px,
+      0px 1px 0px, -1px 0px 0px, 0px -1px 0px;
     letter-spacing: 3px;
   }
 
-  .flow img{
+  .flow img {
     width: 80%;
   }
 
-  .vtitle{
+  .vtitle {
     width: 100%;
   }
 
-  .vtitle img{
+  .vtitle img {
     width: 60%;
   }
 
-  .voice-container1{
+  .voice-container1 {
     flex-direction: column;
   }
 
-  .voice-container2{
+  .voice-container2 {
     flex-direction: column-reverse;
   }
 
-  .voice-container img{
+  .voice-container img {
     width: 100%;
   }
 
-  .profile{
+  .profile {
     width: 100%;
   }
 
-  .ctitle{
+  .ctitle {
     width: 100%;
   }
 
-  .ctitle img{
+  .ctitle img {
     width: 50%;
   }
 
-  .cphoto{
+  .cphoto {
     flex-wrap: wrap;
     height: 60vh;
   }
 
-  .cimg{
+  .cimg {
     width: 40%;
   }
 
-  #company{
+  #company {
     height: 80vh;
   }
 
-  .btitle{
+  .btitle {
     margin-top: 0;
     margin-bottom: 30px;
   }
 
-  .btitle img{
+  .btitle img {
     width: 50%;
   }
-
 }
 
 @media screen and (max-width: 400px) {
@@ -847,7 +852,7 @@ ul {
     padding-right: 5px;
   }
 
-  .table th{
+  .table th {
     padding: 20px 10px;
   }
 }
