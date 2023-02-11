@@ -440,8 +440,14 @@ ul {
 }
 
 .flow-image {
-  width: 40%;
+  /* width: 40%; */
   margin-bottom: 3rem;
+}
+.flow-title-wrapper{
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .ftitle {
@@ -768,6 +774,7 @@ ul {
   }
   .flow-image {
     margin-bottom: 1rem;
+    height: 2.5rem;
   }
 
   .ftitle {
@@ -779,7 +786,7 @@ ul {
     letter-spacing: 3px;
   }
 
-  .flow img {
+  .flow .fimg {
     width: 80%;
   }
 
