@@ -16,7 +16,7 @@ html {
   background: white;
 }
 
-span{
+span {
   display: inline-block;
 }
 
@@ -46,20 +46,30 @@ span{
   margin: 0.5rem 0;
   padding: 1rem;
   border-radius: 0.7rem 0 0 0.7rem;
+  /* アニメーション用の設定 */
+  top: 0;
+  position: relative;
+  transition: all 0.3s;
 }
+
+.side-button:hover {
+  top: -3px;
+  box-shadow: 0 2px 3px rgba(0, 0, 0, 0.3);
+}
+
 .side-button#side-button-apply {
   background-color: var(--secondary-color);
 }
 .side-button#side-button-contact {
   background-color: var(--tertiary-color);
 }
-.side-button#side-button-line-icon{
+.side-button#side-button-line-icon {
   background-color: transparent;
   margin: 0;
   padding: 0;
 }
 .line-icon {
-  width: 2.5rem;
+  width: 4rem;
 }
 
 /* Side bar のアニメーション */
@@ -93,5 +103,8 @@ span{
     padding: 0.5rem;
     padding-right: 1.5rem;
     border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .line-icon {
+    width: 2.5rem;
   }
 }
