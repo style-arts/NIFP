@@ -76,12 +76,6 @@
   border-bottom: solid 3px var(--primary-color);
 }
 
-#keyvisual .catch-phrase {
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  font-weight: bolder;
-}
-
 #keyvisual .kv-illustration {
   width: 80%;
   max-width: 600px;
@@ -522,10 +516,6 @@ a {
 
   #keyvisual .kv-wrapper .circle .circle-text {
     font-size: 0.875rem; /* 14px */
-  }
-
-  #keyvisual .catch-phrase {
-    font-size: 1rem;
   }
 
   #keyvisual .speech-bubble {
