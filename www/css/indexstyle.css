@@ -31,22 +31,17 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 }
 
 .kv-illustration {
   width: 40%;
 }
 
-.catch-phrase {
-  color: var(--primary-color);
-  font-size: 4vw;
-  font-weight: bolder;
-  border-bottom: 3px solid var(--primary-color);
-}
-
 .project-title-img {
-  width: 40%;
+  width: 65%;
   padding: 1rem;
+  border-bottom: 2px solid var(--primary-color);
 }
 
 .kv-buttonarea {
@@ -95,7 +90,7 @@ body {
   }
 
   .project-title-img {
-    width: 50%;
+    width: 80%;
     padding: 0.5rem;
   }
 
