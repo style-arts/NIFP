@@ -320,12 +320,19 @@ ul {
   position: absolute;
 }
 
+.box-color-secondary {
+  background: var(--secondary-color);
+}
+
+.box-color-tertiary {
+  background: var(--tertiary-color);
+}
+
 #box1 {
   top: 8%;
   left: 7%;
   width: 10vh;
   height: 10vh;
-  background: var(--tertiary-color);
 }
 
 #box2 {
@@ -333,7 +340,6 @@ ul {
   right: 8%;
   width: 7vh;
   height: 7vh;
-  background: var(--tertiary-color);
 }
 
 #box3 {
@@ -341,7 +347,6 @@ ul {
   left: 7%;
   width: 10vh;
   height: 10vh;
-  background: var(--secondary-color);
 }
 
 #box4 {
@@ -349,7 +354,6 @@ ul {
   right: 8%;
   width: 7vh;
   height: 7vh;
-  background: var(--tertiary-color);
 }
 
 #box5 {
@@ -357,7 +361,6 @@ ul {
   left: 70%;
   width: 5vh;
   height: 5vh;
-  background: var(--secondary-color);
 }
 
 #box6 {
@@ -365,7 +368,6 @@ ul {
   right: -15%;
   width: 4vh;
   height: 4vh;
-  background: var(--secondary-color);
 }
 
 .fluid {
