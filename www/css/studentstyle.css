@@ -316,8 +316,11 @@ ul {
   margin-bottom: 50px;
 }
 
-#box1 {
+.box {
   position: absolute;
+}
+
+#box1 {
   top: 8%;
   left: 7%;
   width: 10vh;
@@ -326,7 +329,6 @@ ul {
 }
 
 #box2 {
-  position: absolute;
   top: 35%;
   right: 8%;
   width: 7vh;
@@ -335,7 +337,6 @@ ul {
 }
 
 #box3 {
-  position: absolute;
   top: 53%;
   left: 7%;
   width: 10vh;
@@ -344,7 +345,6 @@ ul {
 }
 
 #box4 {
-  position: absolute;
   top: 70%;
   right: 8%;
   width: 7vh;
@@ -353,7 +353,6 @@ ul {
 }
 
 #box5 {
-  position: absolute;
   top: 70%;
   left: 70%;
   width: 5vh;
@@ -362,7 +361,6 @@ ul {
 }
 
 #box6 {
-  position: absolute;
   top: 60%;
   right: -15%;
   width: 4vh;
