@@ -39,6 +39,7 @@ body {
 }
 
 .project-title-img {
+  max-width: 1000px;
   width: 65%;
   padding: 1rem;
   border-bottom: 2px solid var(--primary-color);

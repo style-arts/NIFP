@@ -76,12 +76,6 @@
   border-bottom: solid 3px var(--primary-color);
 }
 
-#keyvisual .catch-phrase {
-  color: var(--primary-color);
-  font-size: 1.5rem;
-  font-weight: bolder;
-}
-
 #keyvisual .kv-illustration {
   width: 80%;
   max-width: 600px;
